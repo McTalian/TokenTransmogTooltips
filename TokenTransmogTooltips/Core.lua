@@ -27,10 +27,16 @@ function TTT:GetTooltipInfo(tokenLink)
   end
 
   local _, linkOptions, _ = LinkUtil.ExtractLink(tokenLink) -- linkType, linkOptions, displayText
+  local itemId = select(1, LinkUtil.SplitLinkOptions(linkOptions))
+  itemId = tonumber(itemId) or 0
   local itemContext = select(12, LinkUtil.SplitLinkOptions(linkOptions))
   itemContext = tonumber(itemContext) or 0
   local tooltipInfo = {}
   --@alpha@
+  table.insert(tooltipInfo, {
+    leftText = "itemId:",
+    rightText = itemId or "<NONE>"
+  })
   table.insert(tooltipInfo, {
     leftText = "itemContext:",
     rightText = itemContext or "<NONE>"
@@ -95,7 +101,8 @@ function TTT:GetTooltipInfo(tokenLink)
       if classCollectedAppearance then
         collectedAppearanceCount = collectedAppearanceCount + 1
       else
-        local _, _, _, _, _, itemLink = C_TransmogCollection.GetAppearanceSourceInfo(modIds[1])
+        local appearanceInfo = C_TransmogCollection.GetAppearanceSourceInfo(modIds[1])
+        local itemLink = appearanceInfo and appearanceInfo.itemLink
         if itemLink then
           local linkType, linkOptions, displayText = LinkUtil.ExtractLink(itemLink)
           if linkType ~= "item" or displayText == "" or displayText == "[]" then
@@ -170,9 +177,11 @@ function TTT:UpdateAppearanceTooltip(...)
     sourceId = source.sourceID
   end
   if sourceId then
-    local _, appearanceID = C_TransmogCollection.GetAppearanceSourceInfo(sourceId)
+    local appearanceInfo = C_TransmogCollection.GetAppearanceSourceInfo(sourceId)
+    local appearanceID = appearanceInfo.itemAppearanceID
     GameTooltip_AddColoredLine(tooltip, "appearanceID: " .. tostring(appearanceID), LIGHTBLUE_FONT_COLOR)
     GameTooltip_AddColoredLine(tooltip, "modID: " .. tostring(sourceId), LIGHTBLUE_FONT_COLOR)
+    GameTooltip:Show()
   end
 end
 

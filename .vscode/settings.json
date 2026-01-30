@@ -12,7 +12,7 @@
     "utf8": "disable"
   },
   "Lua.workspace.library": [
-    "~/.vscode-server/extensions/ketho.wow-api-0.20.8/Annotations/Core"
+    "~/.vscode-server/extensions/ketho.wow-api-0.22.1/Annotations/Core"
   ],
   "Lua.diagnostics.globals": [
     "ITEM_CLASSES_ALLOWED",
@@ -27,7 +27,11 @@
     "GameTooltip_AddColoredLine",
     "Event",
     "CollectionWardrobeUtil",
-    "RunNextFrame"
+    "RunNextFrame",
+    "EventRegistry",
+    "LIGHTBLUE_FONT_COLOR",
+    "CreateAtlasMarkup",
+    "GREEN_FONT_COLOR"
   ],
   "Lua.workspace.useGitIgnore": true,
   "Lua.diagnostics.ignoredFiles": "Disable"
