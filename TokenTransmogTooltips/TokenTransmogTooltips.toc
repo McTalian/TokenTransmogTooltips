@@ -1,4 +1,4 @@
-## Interface: 110107, 110200
+## Interface: 120000, 120001
 ## Title: |cFFe6cc80TokenTransmogTooltips|r
 ## Author: McTalian
 ## Version: @project-version@
