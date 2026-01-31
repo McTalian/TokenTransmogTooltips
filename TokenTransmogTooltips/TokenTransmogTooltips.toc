@@ -24,6 +24,8 @@
 Raids/_raids.xml
 tokenClassAppearanceModInfo.lua
 Core.lua
---@alpha@
+
+#@alpha@
 DataGenerator.lua
---@end-alpha@
+DungeonJournalExtractor.lua
+#@end-alpha@
