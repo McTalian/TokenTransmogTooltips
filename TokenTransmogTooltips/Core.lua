@@ -176,7 +176,7 @@ function TTT:UpdateAppearanceTooltip(...)
     local source = sources[validIndex]
     sourceId = source.sourceID
   end
-  if sourceId then
+  if sourceId and sourceId ~= 0 then
     local appearanceInfo = C_TransmogCollection.GetAppearanceSourceInfo(sourceId)
     local appearanceID = "NONE"
     if appearanceInfo and appearanceInfo.itemAppearanceID then
