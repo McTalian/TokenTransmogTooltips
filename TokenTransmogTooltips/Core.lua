@@ -178,8 +178,11 @@ function TTT:UpdateAppearanceTooltip(...)
   end
   if sourceId then
     local appearanceInfo = C_TransmogCollection.GetAppearanceSourceInfo(sourceId)
-    local appearanceID = appearanceInfo.itemAppearanceID
-    GameTooltip_AddColoredLine(tooltip, "appearanceID: " .. tostring(appearanceID), LIGHTBLUE_FONT_COLOR)
+    local appearanceID = "NONE"
+    if appearanceInfo and appearanceInfo.itemAppearanceID then
+      appearanceID = tostring(appearanceInfo.itemAppearanceID)
+    end
+    GameTooltip_AddColoredLine(tooltip, "appearanceID: " .. appearanceID, LIGHTBLUE_FONT_COLOR)
     GameTooltip_AddColoredLine(tooltip, "modID: " .. tostring(sourceId), LIGHTBLUE_FONT_COLOR)
     GameTooltip:Show()
   end
