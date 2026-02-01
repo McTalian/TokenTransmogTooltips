@@ -8,29 +8,29 @@ Since this is an early release of this addon, item tooltips will have `itemConte
 
 It _should_ work with tokens from the following raids:
 
-- T4 (Karazhan, Gruul's Lair, Magtheridon's Lair)
-- T5 (Serpent Shrine Cavern, The Eye/Tempest Keep)
-- T6 (Battle for Mount Hyjal, Black Temple, Sunwell Plateau)
-- T7 (Naxxramas, Obsidian Sanctum)
-- T8 (Ulduar)
-- T9 (Trial of the Crusader)
-- T10 (Icecrown Citadel)
-- T11 (Blackwing Descent / Throne of the Four Winds)
-- T12 (Firelands)
-- T13 (Dragon Soul)
-- T14 (Terrace of Endless Spring, Heart of Fear)
-- T15 (Throne of Thunder)
-- T16 (Siege of Orgrimmar)
-- T17 (Blackrock Foundry)
-- Castle Nathria
-- Sepulcher of the First Ones
-- Vault of the Incarnates
-- Aberrus, the Shadowed Crucible (including the Void-Touched Curio)
-- Amirdrassil, the Dream's Hope (including the Flame-Warped Curio)
-- Nerub'ar Palace (including the Web-Wrapped Curio)
-- Liberation of Undermine (including the Excessively Bejeweled Curio)
-- Manaforge Omega (including the Hungering Void Curio)
 - Midnight Season 1 Raids: The Voidspire, The Dreamrift, March on Quel'Danas (including the Chiming Void Curio)
+- Manaforge Omega (including the Hungering Void Curio)
+- Liberation of Undermine (including the Excessively Bejeweled Curio)
+- Nerub'ar Palace (including the Web-Wrapped Curio)
+- Amirdrassil, the Dream's Hope (including the Flame-Warped Curio)
+- Aberrus, the Shadowed Crucible (including the Void-Touched Curio)
+- Vault of the Incarnates
+- Sepulcher of the First Ones
+- Castle Nathria
+- T17 (Blackrock Foundry)
+- T16 (Siege of Orgrimmar)
+- T15 (Throne of Thunder)
+- T14 (Terrace of Endless Spring, Heart of Fear)
+- T13 (Dragon Soul)
+- T12 (Firelands)
+- T11 (Blackwing Descent / Throne of the Four Winds)
+- T10 (Icecrown Citadel)
+- T9 (Trial of the Crusader)
+- T8 (Ulduar)
+- T7 (Naxxramas, Obsidian Sanctum)
+- T6 (Battle for Mount Hyjal, Black Temple, Sunwell Plateau)
+- T5 (Serpent Shrine Cavern, The Eye/Tempest Keep)
+- T4 (Karazhan, Gruul's Lair, Magtheridon's Lair)
 
 **This data is manually maintained**, so it may not be complete or accurate. If you find a token that is not supported, please open an issue on the [GitHub repository](https://github.com/mctalian/TokenTransmogTooltips/issues).
 
