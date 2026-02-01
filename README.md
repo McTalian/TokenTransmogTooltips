@@ -30,13 +30,14 @@ It _should_ work with tokens from the following raids:
 - Nerub'ar Palace (including the Web-Wrapped Curio)
 - Liberation of Undermine (including the Excessively Bejeweled Curio)
 - Manaforge Omega (including the Hungering Void Curio)
+- Midnight Season 1 Raids: The Voidspire, The Dreamrift, March on Quel'Danas (including the Chiming Void Curio)
 
 **This data is manually maintained**, so it may not be complete or accurate. If you find a token that is not supported, please open an issue on the [GitHub repository](https://github.com/mctalian/TokenTransmogTooltips/issues).
 
-## Recommended addons
+## Recommended addon(s)
 
 * `Vendor` to set up auto sell/destroy rules
-* `TipTac Reborn` to enable itemID on tooltips (helpful for fixing data, I'm sure there are alternatives, it's just what I use 😝)
+* Any addon that shows item IDs if you're looking to contribute token data. Alpha builds of TokenTransmogTooltips offer itemIds as well as itemContexts for items. If you would find that useful in a release build, please let me know and I can add a few configuration options to this addon.
 
 ## This doesn't work for this token I just looted!
 
@@ -46,4 +47,4 @@ I'm committed to getting data fixed as soon as possible. I'd like to get this to
 
 ## Notes
 
-There are other addons that do this, or something similar. I noticed missing data in those addons so I decided to write scripts and helpers to scrape data from Wowhead, generate code from the game itself, and then manually adjust the data to fill in the gaps.
+There are other addons that do this, or something similar. I noticed missing data in those addons so I decided to restructure the data to support the various Blizzard implementations of tokens throughout the years. I also wrote scripts and helpers to scrape data from Wowhead, generate code from the game itself, and then manually adjust the data to fill in the gaps.
