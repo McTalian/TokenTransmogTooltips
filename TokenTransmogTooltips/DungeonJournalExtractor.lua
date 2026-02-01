@@ -50,7 +50,6 @@ local EJ_DIFFICULTY_MAP = {
 
 local function GetCurrentEJDifficulty()
   local difficultyID = EJ_GetDifficulty()
-  print(difficultyID)
   if difficultyID and EJ_DIFFICULTY_MAP[difficultyID] then
     return EJ_DIFFICULTY_MAP[difficultyID]
   end
@@ -167,12 +166,12 @@ function DungeonJournalExtractor:FormatTokenData(tokens)
   
   local output = {}
   table.insert(output, string.format("-- Extracted Token Data (Difficulty: %s) --", difficultyName))
-  table.insert(output, "-- Format: [ITEMID] - Token Name - SLOT - TOKEN_GROUP - DIFFICULTY(ItemCreationContext)")
+  table.insert(output, "-- Format: [ITEMID] - Token Name - SLOT - DIFFICULTY(ItemCreationContext) -- [Classes]")
   table.insert(output, "")
   
   for _, token in ipairs(tokens) do
     local line = string.format(
-      "[%d] - %s - %s - ??? - %s(%s)",
+      "[%d] - %s - %s - %s(%s)",
       token.itemID,
       token.name,
       token.slot,
