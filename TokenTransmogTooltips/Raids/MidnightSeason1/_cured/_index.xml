@@ -1,0 +1,7 @@
+<Ui>
+    <Script file="rogue.lua"/>
+    <Script file="monk.lua"/>
+    <Script file="druid.lua"/>
+    <Script file="demonhunter.lua"/>
+    <Script file="_cured.lua"/>
+</Ui>

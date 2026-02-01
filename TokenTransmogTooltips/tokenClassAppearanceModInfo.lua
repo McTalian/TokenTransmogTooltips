@@ -2,12 +2,14 @@ local addonName, ns = ...
 
 ns.tokenClassAppearanceModInfo = {}
 
+-- All raids in the ns.Raids table are added to the tokenClassAppearanceModInfo table
 for raidName, raidData in pairs(ns.Raids) do
   RunNextFrame(function()
     for tokenID, mapData in pairs(raidData) do
       if not ns.tokenClassAppearanceModInfo[tokenID] then
         ns.tokenClassAppearanceModInfo[tokenID] = mapData
       --@alpha@
+      -- For alpha builds, we try to catch any duplicate token IDs during smoke testing
       else
         error(
           string.format(
@@ -23,6 +25,7 @@ for raidName, raidData in pairs(ns.Raids) do
   end)
 end
 
+-- This is specific to Shadowlands, there is no need to update this for other expansions
 ns.shadowlandsMultiClassLookup = {
   ["MYSTIC"] = { "DRUID", "HUNTER", "MAGE" },
   ["ZENITH"] = { "EVOKER", "MONK", "ROGUE", "WARRIOR" },
