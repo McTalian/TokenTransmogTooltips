@@ -192,4 +192,10 @@ function TTT:Initialize()
   EventRegistry:RegisterCallback("CollectionWardrobe.SetAppearanceTooltip", TTT.UpdateAppearanceTooltip, TTT)
 
   TooltipDataProcessor.AddTooltipPostCall(Enum.TooltipDataType.Item, self.OnTooltipSetItem)
+  
+  --@alpha@
+  if ns.DungeonJournalExtractor then
+    ns.DungeonJournalExtractor:Initialize()
+  end
+  --@end-alpha@
 end

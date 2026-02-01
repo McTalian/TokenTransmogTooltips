@@ -1,0 +1,6 @@
+<Ui>
+    <Script file="warrior.lua"/>
+    <Script file="paladin.lua"/>
+    <Script file="deathknight.lua"/>
+    <Script file="_forged.lua"/>
+</Ui>

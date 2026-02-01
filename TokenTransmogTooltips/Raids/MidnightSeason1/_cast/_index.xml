@@ -1,0 +1,6 @@
+<Ui>
+    <Script file="hunter.lua"/>
+    <Script file="shaman.lua"/>
+    <Script file="evoker.lua"/>
+    <Script file="_cast.lua"/>
+</Ui>

@@ -1,0 +1,6 @@
+<Ui>
+    <Script file="priest.lua"/>
+    <Script file="mage.lua"/>
+    <Script file="warlock.lua"/>
+    <Script file="_woven.lua"/>
+</Ui>

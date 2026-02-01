@@ -1,0 +1,8 @@
+<Ui xsi:schemaLocation="http://www.blizzard.com/wow/ui/ ..\FrameXML\UI.xsd">
+  <Script file="_index.lua"/>
+  <Include file="_woven/_index.xml"/>
+  <Include file="_forged/_index.xml"/>
+  <Include file="_cured/_index.xml"/>
+  <Include file="_cast/_index.xml"/>
+  <Script file="tokens.lua"/>
+</Ui>
