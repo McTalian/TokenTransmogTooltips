@@ -4,33 +4,40 @@ This is a World of Warcraft addon that adds transmog data to tooltips of gear to
 
 It supports tokens that can be exchanged for multiple items (like tokens from Tempest Keep which allows for PvP or PvE gear), tokens that have a "Trade Up" program (like the tokens in Icecrown Citadel), and quest items that start a quest where you can choose any of the gear tokens (like the tokens from Blackrock Foundry).
 
-Since this is an early release of this addon, item tooltips will have `itemContext` on them to help debug incorrect data. Similarly, item transmog tooltips will have `appearanceID` and `modID` on them to help identify these identifiers to add missing entries to this data.
+It _should_ work with tokens from the following sources:
 
-It _should_ work with tokens from the following raids:
-
-- Midnight Season 1 Raids: The Voidspire, The Dreamrift, March on Quel'Danas (including the Chiming Void Curio)
-- Manaforge Omega (including the Hungering Void Curio)
-- Liberation of Undermine (including the Excessively Bejeweled Curio)
-- Nerub'ar Palace (including the Web-Wrapped Curio)
-- Amirdrassil, the Dream's Hope (including the Flame-Warped Curio)
-- Aberrus, the Shadowed Crucible (including the Void-Touched Curio)
-- Vault of the Incarnates
-- Sepulcher of the First Ones
-- Castle Nathria
-- T17 (Blackrock Foundry)
-- T16 (Siege of Orgrimmar)
-- T15 (Throne of Thunder)
-- T14 (Terrace of Endless Spring, Heart of Fear)
-- T13 (Dragon Soul)
-- T12 (Firelands)
-- T11 (Blackwing Descent / Throne of the Four Winds)
-- T10 (Icecrown Citadel)
-- T9 (Trial of the Crusader)
-- T8 (Ulduar)
-- T7 (Naxxramas, Obsidian Sanctum)
-- T6 (Battle for Mount Hyjal, Black Temple, Sunwell Plateau)
-- T5 (Serpent Shrine Cavern, The Eye/Tempest Keep)
-- T4 (Karazhan, Gruul's Lair, Magtheridon's Lair)
+- **Midnight** _12.x.x_
+  - Season 1 Raids: The Voidspire, The Dreamrift, March on Quel'Danas (including the Chiming Void Curio)
+- **The War Within** _11.x.x_
+  - Season 3 Raid: Manaforge Omega (including the Hungering Void Curio)
+  - Season 2 Raid: Liberation of Undermine (including the Excessively Bejeweled Curio)
+  - Season 1 Raid: Nerub'ar Palace (including the Web-Wrapped Curio)
+- **Dragonflight** _10.x.x_
+  - Season 3 Raid: Amirdrassil, the Dream's Hope (including the Flame-Warped Curio)
+  - Season 2 Raid: Aberrus, the Shadowed Crucible (including the Void-Touched Curio)
+  - Season 1 Raid: Vault of the Incarnates
+- **Shadowlands** _9.x.x_
+  - Season 3 Raid: Sepulcher of the First Ones
+  - Season 1 Raid: Castle Nathria (Anima weapon tokens)
+- **Warlords of Draenor** _6.x.x_
+  - Tier 17 Raid: Blackrock Foundry (including the Quest items)
+- **Mists of Pandaria** _5.x.x_
+  - Tier 16 Raid: Siege of Orgrimmar
+  - Tier 15 Raid: Throne of Thunder
+  - Tier 14 Raids: Terrace of Endless Spring, Heart of Fear
+- **Cataclysm** _4.x.x_
+  - Tier 13 Raid: Dragon Soul
+  - Tier 12 Raid: Firelands
+  - Tier 11 Raids: Blackwing Descent, Throne of the Four Winds
+- **Wrath of the Lich King** _3.x.x_
+  - Tier 10 Raid: Icecrown Citadel (including the Trade Up program for Heroic gear)
+  - Tier 9 Raid: Trial of the Crusader
+  - Tier 8 Raid: Ulduar
+  - Tier 7 Raids: Naxxramas, Obsidian Sanctum
+- **The Burning Crusade** _2.x.x_
+  - Tier 6 Raids: Battle for Mount Hyjal, Black Temple, Sunwell Plateau
+  - Tier 5 Raids: Serpent Shrine Cavern, The Eye/Tempest Keep
+  - Tier 4 Raids: Karazhan, Gruul's Lair, Magtheridon's Lair
 
 **This data is manually maintained**, so it may not be complete or accurate. If you find a token that is not supported, please open an issue on the [GitHub repository](https://github.com/mctalian/TokenTransmogTooltips/issues).
 
@@ -43,7 +50,7 @@ It _should_ work with tokens from the following raids:
 
 There isn't a Blizzard API for this type of data, so I have manually added lookup tables for all the tokens I could find. If you find a token that is not supported (or is incorrect), please open an issue on the [GitHub repository](https://github.com/mctalian/TokenTransmogTooltips/issues), or let me know somehow. Include the token's itemID, the itemContext (should be on the tooltip for now), and which raid it comes from. You can also open the Appearance Journal in-game and find the items that should be associated with that token and provide the appearanceID and modID for those items (this addon adds that data to the tooltips in the Appearance Journal as well).
 
-I'm committed to getting data fixed as soon as possible. I'd like to get this to the point where it's up to date with current raids so that it just needs a data refresh for patches. Please let me know what's missing or incorrect so I can get it updated ASAP 🙏🏻
+The addon should be up to date with the latest raids. I will try to look into adding non-raid tokens as well. Please let me know if there are raid tokens missing, or if there are particular tokens you would like to see added 🙏
 
 ## Notes
 
