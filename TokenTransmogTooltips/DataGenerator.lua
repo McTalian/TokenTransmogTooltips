@@ -7,6 +7,7 @@ local DataGenerator = {}
 local INVENTORY_SLOTS = {
   {id = INVSLOT_HEAD, name = "HELM", constant = "INVSLOT_HEAD"},
   {id = INVSLOT_SHOULDER, name = "SHOULDERS", constant = "INVSLOT_SHOULDER"},
+  {id = INVSLOT_BACK, name = "CLOAK", constant = "INVSLOT_BACK"},
   {id = INVSLOT_CHEST, name = "CHEST", constant = "INVSLOT_CHEST"},
   {id = INVSLOT_WAIST, name = "BELT", constant = "INVSLOT_WAIST"},
   {id = INVSLOT_LEGS, name = "LEGGINGS", constant = "INVSLOT_LEGS"},
@@ -141,7 +142,8 @@ end
 -- Generate button
 frame.generateButton = CreateFrame("Button", nil, frame, "GameMenuButtonTemplate")
 frame.generateButton:SetSize(120, 30)
-frame.generateButton:SetPoint("TOPLEFT", frame.slotCheckboxes[#frame.slotCheckboxes - 1], "BOTTOMLEFT", 0, -15)
+local lastSlotLeftSide = #frame.slotCheckboxes % 2 == 0 and frame.slotCheckboxes[#frame.slotCheckboxes - 1] or frame.slotCheckboxes[#frame.slotCheckboxes]
+frame.generateButton:SetPoint("TOPLEFT", lastSlotLeftSide, "BOTTOMLEFT", 0, -15)
 frame.generateButton:SetText("Generate")
 frame.generateButton:SetNormalFontObject("GameFontNormal")
 frame.generateButton:SetHighlightFontObject("GameFontHighlight")
