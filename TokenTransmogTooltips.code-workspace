@@ -1,0 +1,87 @@
+{
+	"folders": [
+		{
+			"path": ".",
+			"Lua.diagnostics.globals": [
+				"ITEM_CLASSES_ALLOWED",
+				"class",
+				"SlashCmdList",
+				"TooltipDataProcessor",
+				"GetItemInfoFromHyperlink",
+				"TRANSMOG_SET_PARTIALLY_KNOWN_CLASS",
+				"COLLECTED",
+				"LinkUtil",
+				"DEFAULT_CHAT_FRAME",
+				"GameTooltip_AddColoredLine",
+				"Event",
+				"CollectionWardrobeUtil",
+				"RunNextFrame",
+				"EventRegistry",
+				"LIGHTBLUE_FONT_COLOR",
+				"CreateAtlasMarkup",
+				"GREEN_FONT_COLOR",
+				"INVSLOT_SHOULDER",
+				"INVSLOT_HEAD",
+				"INVSLOT_CHEST",
+				"INVSLOT_WAIST",
+				"INVSLOT_LEGS",
+				"INVSLOT_FEET",
+				"INVSLOT_WRIST",
+				"INVSLOT_HAND",
+				"ColorManager",
+				"EncounterJournal",
+				"EncounterJournal_LoadUI",
+				"EncounterJournal_IsLootTabSelected",
+				"EncounterJournalEncounterFrameInfo",
+				"EncounterJournalEncounterFrameInfoLootTab",
+				"EncounterJournalEncounterFrameInfoLootTabSelect",
+				"EncounterJournalEncounterFrame"
+			],
+			"wowAPI.luals.frameXML": true,
+			"wowAPI.luals.configurationScope": "User",
+			"Lua.workspace.userThirdParty": [],
+			"Lua.workspace.checkThirdParty": false,
+			"Lua.workspace.ignoreSubmodules": true,
+			"Lua.type.weakUnionCheck": true,
+			"wowAPI.debugMode": false,
+		},
+		{
+			"path": "../wow-ui-source",
+			"Lua.diagnostics.enable": false,
+		},
+	],
+	"settings": {
+		"files.exclude": {
+			"**/.git": true
+		},
+		"search.exclude": {
+			"**/node_modules": true,
+			"**/.release": true
+		},
+		"wowAPI.debugMode": true,
+		"wowAPI.luals.configurationScope": "User",
+		"Lua.diagnostics.enable": false,
+		"Lua.diagnostics.disable": [
+			"assign-type-mismatch",
+			"ambiguity-1",
+			"cast-local-type",
+			"deprecated",
+			"duplicate-set-field",
+			"inject-field",
+			"lowercase-global",
+			"missing-fields",
+			"missing-parameter",
+			"missing-return",
+			"need-check-nil",
+			"param-type-mismatch",
+			"redundant-parameter",
+			"unbalanced-assignments",
+			"undefined-field",
+			"undefined-global"
+		],
+		"wowAPI.luals.frameXML": false,
+		"chat.tools.terminal.autoApprove": {
+			"make": true
+		},
+	}
+}

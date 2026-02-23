@@ -16,6 +16,7 @@ It _should_ work with tokens from the following sources:
   - Season 3 Raid: Amirdrassil, the Dream's Hope (including the Flame-Warped Curio)
   - Season 2 Raid: Aberrus, the Shadowed Crucible (including the Void-Touched Curio)
   - Season 1 Raid: Vault of the Incarnates
+  - The Forbidden Reach (Primalist Armor Tokens only for now)
 - **Shadowlands** _9.x.x_
   - Season 3 Raid: Sepulcher of the First Ones
   - Season 1 Raid: Castle Nathria (Anima weapon tokens)
