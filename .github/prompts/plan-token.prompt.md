@@ -1,3 +1,9 @@
+---
+name: 'plan-token'
+description: 'Generate an implementation plan from a completed raid token record'
+agent: agent
+argument-hint: 'ID (3-digit record number, e.g. 001)'
+---
 # Plan Raid Data Generation
 
 Generate a detailed implementation plan for adding new raid token data based on a completed data collection document.
@@ -21,7 +27,7 @@ The raid record file must contain:
 
 ### 1. Validate ID
 
-1. Check that `ID` matches the prefix of an existing file in `/.collab/raid_token_records/`
+1. Check that `ID` matches the prefix of an existing file in `/.github/raid_token_records/`
 2. If invalid or omitted, prompt the user for a valid ID
 3. Load the file contents
 
@@ -43,7 +49,7 @@ For each AUDIT section (denoted by `## Audit`):
    - **HALT IMMEDIATELY**
    - List all unresolved audit entries
    - Prompt user to review and mark exactly one choice per entry
-   - Instruct user to re-run `@#file:plan-raid` after fixing
+   - Instruct user to re-run `@#file:plan-token` after fixing
 
 ### 4. Parse Token Groups
 
@@ -120,20 +126,20 @@ SHOULDERS, appearanceID, modID
 
 If validation passes:
 - Instruct user to review PLAN OUTPUT section
-- Provide command to proceed: `@#file:generate-raid-code ID="{ID}"`
+- Provide command to proceed: `/generate-token ID="{ID}"`
 
 If validation fails:
 - List all blocking issues
 - Provide specific guidance for resolution
-- Instruct user to fix and re-run `@#file:plan-raid ID="{ID}"`
+- Instruct user to fix and re-run `/plan-token ID="{ID}"`
 
 ## Example Usage
 
 ```
-@#file:plan-raid ID="002"
+/plan-token ID="002"
 ```
 
 ## Output
 
-- Updates: `/.collab/raid_token_records/{ID}_{raidName}.md` with PLAN OUTPUT section
+- Updates: `/.github/raid_token_records/{ID}_{raidName}.md` with PLAN OUTPUT section
 - User receives: Validation results and next steps

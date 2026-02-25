@@ -1,4 +1,6 @@
 ---
+name: 'Project Standards'
+description: 'Coding conventions, Lua style, and file structure rules'
 applyTo: '**'
 ---
 

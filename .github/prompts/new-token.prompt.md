@@ -1,3 +1,9 @@
+---
+name: 'new-token'
+description: 'Start collecting token data for a new raid'
+agent: agent
+argument-hint: 'raidName [raidAbbrev] [patch]'
+---
 # New Raid Data Collection
 
 Begin the process of adding a new raid's token data to the addon by creating a structured data collection document.
@@ -18,13 +24,13 @@ If `raidName` is omitted or contains invalid characters (spaces, special charact
 
 ### 2. Determine Next ID
 
-1. Examine files in `/.collab/raid_token_records/`
+1. Examine files in `/.github/raid_token_records/`
 2. Find the highest existing ID (sequential 3-digit integers with leading zeros, starting from 001)
 3. Increment by 1 to get the next ID
 
 ### 3. Create Raid Record
 
-1. Copy `/.collab/templates/NEW_RAID_TEMPLATE.md` to `/.collab/raid_token_records/{nextID}_{raidName}.md`
+1. Copy `/.github/docs/NEW_RAID_TEMPLATE.md` to `/.github/raid_token_records/{nextID}_{raidName}.md`
 2. Fill in the header with provided information:
    - Raid Name
    - Raid Abbreviation (provided or derived)
@@ -42,15 +48,15 @@ Instruct the user to:
    - Use the Dungeon Journal "Extract Tokens" button for token IDs
    - Use `/tttgen` command for appearance data
    - Complete the Class/Difficulty/Slot → AppearanceID/ModID mappings
-3. Invoke `@#file:plan-raid` with the ID when ready to continue
+3. Invoke `@#file:plan-token` with the ID when ready to continue
 
 ## Example Usage
 
 ```
-@#file:new-raid raidName="ManaforgeOmega" raidAbbrev="MFO" patch="12.1.0"
+/new-token raidName="ManaforgeOmega" raidAbbrev="MFO" patch="12.1.0"
 ```
 
 ## Output
 
-- Creates: `/.collab/raid_token_records/{ID}_{raidName}.md`
+- Creates: `/.github/raid_token_records/{ID}_{raidName}.md`
 - User receives: Path to new file and instructions for data collection
