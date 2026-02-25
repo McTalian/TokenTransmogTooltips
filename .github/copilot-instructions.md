@@ -60,14 +60,14 @@ Always use forward slashes (`/`) for file paths regardless of OS. The WoW client
 This project uses several Copilot customization types:
 
 - **Instructions** (this file + supporting docs): Coding standards, data model rules
-- **Prompt files**: Reusable workflows for raid data generation (`@#file:new-raid`, `@#file:plan-raid`, `@#file:generate-raid-code`)
-- **Reference docs** (`.collab/docs/`): Environment setup, debugging tools, testing guides - reference as needed but not behavioral instructions
+- **Prompt files**: Reusable workflows for raid data generation (`/new-token`, `/plan-token`, `/generate-token`)
+- **Reference docs** (`.github/docs/`): Environment setup, debugging tools, testing guides - reference as needed but not behavioral instructions
 
 ## Reference Documentation
 
-- **Data Model**: [.collab/data-model.instructions.md](../.collab/data-model.instructions.md) - Data architecture and directory organization
-- **Standards**: [.collab/standards.instructions.md](../.collab/standards.instructions.md) - Coding conventions and style guide
-- **Environment**: [.collab/docs/environment-setup.md](../.collab/docs/environment-setup.md) - Dependencies, build tools, WoW API documentation
-- **Debugging**: [.collab/docs/debugging-tools.md](../.collab/docs/debugging-tools.md) - Alpha build tools for data collection
-- **Testing**: [.collab/docs/testing-guide.md](../.collab/docs/testing-guide.md) - Validation strategies and in-game verification
-- **Template**: [.collab/templates/NEW_RAID_TEMPLATE.md](../.collab/templates/NEW_RAID_TEMPLATE.md) - Raid token data collection format
+- **Data Model**: [.github/instructions/data-model.instructions.md](instructions/data-model.instructions.md) - Data architecture and directory organization
+- **Standards**: [.github/instructions/standards.instructions.md](instructions/standards.instructions.md) - Coding conventions and style guide
+- **Environment**: [.github/docs/environment-setup.md](docs/environment-setup.md) - Dependencies, build tools, WoW API documentation
+- **Debugging**: [.github/docs/debugging-tools.md](docs/debugging-tools.md) - Alpha build tools for data collection
+- **Testing**: [.github/docs/testing-guide.md](docs/testing-guide.md) - Validation strategies and in-game verification
+- **Template**: [.github/docs/NEW_RAID_TEMPLATE.md](docs/NEW_RAID_TEMPLATE.md) - Raid token data collection format

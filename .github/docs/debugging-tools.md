@@ -61,7 +61,7 @@ This document covers the debugging tools and data collection aids available in a
 - Confirm class/appearance/modID relationships
 - Identify duplicate token IDs (addon warns on init if detected)
 
-**Structure**: Matches the data model described in [data-model.instructions.md](../data-model.instructions.md)
+**Structure**: Matches the data model described in [data-model.instructions.md](../instructions/data-model.instructions.md)
 
 ### Extract Tokens Button (Dungeon Journal)
 
@@ -93,7 +93,7 @@ TokenID: 12346, Context: MYTHIC, Slot: SHOULDERS, Classes: Death Knight, Demon H
 - The slot detection is best-effort based on tooltip keyword matching
 - Class information is parsed from tooltip text
 
-**When to use**: During the `@#file:new-raid` workflow when filling out the "Token Item ID Mapping" section of the raid template.
+**When to use**: During the `/new-token` workflow when filling out the "Token Item ID Mapping" section of the raid template.
 
 ### /tttgen Slash Command
 
@@ -124,9 +124,9 @@ SLOT, appearanceID, modID
 ...
 ```
 
-**Purpose**: Machine-readable format for the `@#file:plan-raid` workflow to consume
+**Purpose**: Machine-readable format for the `/plan-token` workflow to consume
 
-**Headers**: `### CLASS - Set Name - Difficulty` (converted by `@#file:plan-raid` to `### TOKENGROUP - CLASS - DIFFICULTY`)
+**Headers**: `### CLASS - Set Name - Difficulty` (converted by `/plan-token` to `### TOKENGROUP - CLASS - DIFFICULTY`)
 
 #### AUDIT Block
 ```
@@ -142,7 +142,7 @@ SLOT, appearanceID, modID
 
 **Pre-selection logic**: The tool attempts to auto-select the best match by comparing set name words with source item names (see [DataGenerator.lua around Line 26](../../TokenTransmogTooltips/DataGenerator.lua) `TokenizeWords` and `GetWordOverlapScore`)
 
-**When to use**: During the `@#file:new-raid` workflow after filling token IDs and before running `@#file:plan-raid`.
+**When to use**: During the `/new-token` workflow after filling token IDs and before running `/plan-token`.
 
 **Key behaviors**:
 - If an appearance has multiple sources (different items that grant the same appearance), all are listed in the AUDIT block
@@ -153,16 +153,16 @@ SLOT, appearanceID, modID
 1. User runs `/tttgen` for each relevant set
 2. User pastes RAW OUTPUT into raid template
 3. User reviews AUDIT blocks and marks selections with `[X]`
-4. User runs `@#file:plan-raid` to generate PLAN OUTPUT
+4. User runs `/plan-token` to generate PLAN OUTPUT
 5. If any AUDIT block lacks `[X]`, planning halts with blocking issues listed
 
 #### Understanding /tttgen Output Format
 
-The `/tttgen` output includes additional details that help with the `@#file:plan-raid` workflow:
+The `/tttgen` output includes additional details that help with the `/plan-token` workflow:
 
 **TEMPLATE headers format**: `### CLASS - Set Name - Difficulty`
 - Example: `### MAGE - Mystic Raiment - HEROIC`
-- The `@#file:plan-raid` command transforms these into `### TOKENGROUP - CLASS - DIFFICULTY` using the Token Groups & Class Mappings section
+- The `/plan-token` command transforms these into `### TOKENGROUP - CLASS - DIFFICULTY` using the Token Groups & Class Mappings section
 - Example result: `### MYSTIC - MAGE - HEROIC`
 
 **Using appearanceID and modID**:

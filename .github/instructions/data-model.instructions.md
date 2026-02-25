@@ -1,4 +1,6 @@
 ---
+name: 'Data Model'
+description: 'Data architecture and directory organization for raid/token/appearance data'
 applyTo: '**'
 ---
 

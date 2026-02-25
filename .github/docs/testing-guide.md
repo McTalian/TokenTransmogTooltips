@@ -162,5 +162,5 @@ Future enhancements could include:
 ## Documentation References
 
 - **[debugging-tools.md](debugging-tools.md)** - Debug tools and data collection aids
-- **[data-model.instructions.md](../data-model.instructions.md)** - Data structure and organization patterns
-- **[standards.instructions.md](../standards.instructions.md)** - Code conventions that affect data structure
+- **[data-model.instructions.md](../instructions/data-model.instructions.md)** - Data structure and organization patterns
+- **[standards.instructions.md](../instructions/standards.instructions.md)** - Code conventions that affect data structure
