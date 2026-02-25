@@ -1,0 +1,546 @@
+{
+    "173394": {
+        "name_enus": "Black Empire Plate Boots",
+        "quality": 3,
+        "icon": "inv_boot_plate_nzothraid_d_01",
+        "screenshot": {},
+        "jsonequip": {
+            "classes": 35,
+            "itemSquishEraId": 0,
+            "reqlevel": 50,
+            "sellprice": 50000
+        },
+        "attainable": 0,
+        "flags2": 155648,
+        "displayName": "",
+        "qualityTier": 0,
+        "contains": []
+    },
+    "173393": {
+        "name_enus": "Black Empire Plate Chestpiece",
+        "quality": 3,
+        "icon": "inv_chest_plate_nzothraid_d_01",
+        "screenshot": {},
+        "jsonequip": {
+            "classes": 35,
+            "itemSquishEraId": 0,
+            "reqlevel": 50,
+            "sellprice": 50000
+        },
+        "attainable": 0,
+        "flags2": 155648,
+        "displayName": "",
+        "qualityTier": 0,
+        "contains": []
+    },
+    "173409": {
+        "name_enus": "Black Empire Leather Gloves",
+        "quality": 3,
+        "icon": "inv_glove_leatherraidnzoth_d_01",
+        "screenshot": {},
+        "jsonequip": {
+            "classes": 3592,
+            "itemSquishEraId": 0,
+            "reqlevel": 50,
+            "sellprice": 50000
+        },
+        "attainable": 0,
+        "flags2": 155648,
+        "displayName": "",
+        "qualityTier": 0,
+        "contains": []
+    },
+    "173414": {
+        "name_enus": "Black Empire Cloth Robes",
+        "quality": 3,
+        "icon": "inv_chest_cloth_nzothraid_d_01",
+        "screenshot": {},
+        "jsonequip": {
+            "classes": 400,
+            "itemSquishEraId": 0,
+            "reqlevel": 50,
+            "sellprice": 50000
+        },
+        "attainable": 0,
+        "flags2": 155648,
+        "displayName": "",
+        "qualityTier": 0,
+        "contains": []
+    },
+    "173410": {
+        "name_enus": "Black Empire Leather Helm",
+        "quality": 3,
+        "icon": "inv_helm_leatherraidnzoth_d_01",
+        "screenshot": {},
+        "jsonequip": {
+            "classes": 3592,
+            "itemSquishEraId": 0,
+            "reqlevel": 50,
+            "sellprice": 50000
+        },
+        "attainable": 0,
+        "flags2": 155648,
+        "displayName": "",
+        "qualityTier": 0,
+        "contains": []
+    },
+    "173417": {
+        "name_enus": "Black Empire Cloth Helm",
+        "quality": 3,
+        "icon": "inv_helm_cloth_nzothraid_d_01",
+        "screenshot": {},
+        "jsonequip": {
+            "classes": 400,
+            "itemSquishEraId": 0,
+            "reqlevel": 50,
+            "sellprice": 50000
+        },
+        "attainable": 0,
+        "flags2": 155648,
+        "displayName": "",
+        "qualityTier": 0,
+        "contains": []
+    },
+    "173407": {
+        "name_enus": "Black Empire Leather Chestpiece",
+        "quality": 3,
+        "icon": "inv_chest_leatherraidnzoth_d_01",
+        "screenshot": {},
+        "jsonequip": {
+            "classes": 3592,
+            "itemSquishEraId": 0,
+            "reqlevel": 50,
+            "sellprice": 50000
+        },
+        "attainable": 0,
+        "flags2": 155648,
+        "displayName": "",
+        "qualityTier": 0,
+        "contains": []
+    },
+    "173424": {
+        "name_enus": "Black Empire Leather Bracers",
+        "quality": 3,
+        "icon": "inv_bracer_leatherraidnzoth_d_01",
+        "screenshot": {},
+        "jsonequip": {
+            "classes": 3592,
+            "itemSquishEraId": 0,
+            "reqlevel": 50,
+            "sellprice": 50000
+        },
+        "attainable": 0,
+        "flags2": 155648,
+        "displayName": "",
+        "qualityTier": 0,
+        "contains": []
+    },
+    "173418": {
+        "name_enus": "Black Empire Cloth Leggings",
+        "quality": 3,
+        "icon": "inv_pant_cloth_nzothraid_d_01",
+        "screenshot": {},
+        "jsonequip": {
+            "classes": 400,
+            "itemSquishEraId": 0,
+            "reqlevel": 50,
+            "sellprice": 50000
+        },
+        "attainable": 0,
+        "flags2": 155648,
+        "displayName": "",
+        "qualityTier": 0,
+        "contains": []
+    },
+    "173406": {
+        "name_enus": "Black Empire Mail Belt",
+        "quality": 3,
+        "icon": "inv_belt_mail_nzothraid_d_01",
+        "screenshot": {},
+        "jsonequip": {
+            "classes": 4164,
+            "itemSquishEraId": 0,
+            "reqlevel": 50,
+            "sellprice": 50000
+        },
+        "attainable": 0,
+        "flags2": 155648,
+        "displayName": "",
+        "qualityTier": 0,
+        "contains": []
+    },
+    "173398": {
+        "name_enus": "Black Empire Plate Spaulders",
+        "quality": 3,
+        "icon": "inv_shoulder_plate_nzothraid_d_01",
+        "screenshot": {},
+        "jsonequip": {
+            "classes": 35,
+            "itemSquishEraId": 0,
+            "reqlevel": 50,
+            "sellprice": 50000
+        },
+        "attainable": 0,
+        "flags2": 155648,
+        "displayName": "",
+        "qualityTier": 0,
+        "contains": []
+    },
+    "173400": {
+        "name_enus": "Black Empire Mail Chestpiece",
+        "quality": 3,
+        "icon": "inv_chest_mail_nzothraid_d_01",
+        "screenshot": {},
+        "jsonequip": {
+            "classes": 4164,
+            "itemSquishEraId": 0,
+            "reqlevel": 50,
+            "sellprice": 50000
+        },
+        "attainable": 0,
+        "flags2": 155648,
+        "displayName": "",
+        "qualityTier": 0,
+        "contains": []
+    },
+    "173412": {
+        "name_enus": "Black Empire Leather Spaulders",
+        "quality": 3,
+        "icon": "inv_shoulder_leatherraidnzoth_d_01",
+        "screenshot": {},
+        "jsonequip": {
+            "classes": 3592,
+            "itemSquishEraId": 0,
+            "reqlevel": 50,
+            "sellprice": 50000
+        },
+        "attainable": 0,
+        "flags2": 155648,
+        "displayName": "",
+        "qualityTier": 0,
+        "contains": []
+    },
+    "173422": {
+        "name_enus": "Black Empire Plate Bracers",
+        "quality": 3,
+        "icon": "inv_bracer_plate_nzothraid_d_01",
+        "screenshot": {},
+        "jsonequip": {
+            "classes": 35,
+            "itemSquishEraId": 0,
+            "reqlevel": 50,
+            "sellprice": 50000
+        },
+        "attainable": 0,
+        "flags2": 155648,
+        "displayName": "",
+        "qualityTier": 0,
+        "contains": []
+    },
+    "173395": {
+        "name_enus": "Black Empire Plate Gloves",
+        "quality": 3,
+        "icon": "inv_glove_plate_nzothraid_d_01",
+        "screenshot": {},
+        "jsonequip": {
+            "classes": 35,
+            "itemSquishEraId": 0,
+            "reqlevel": 50,
+            "sellprice": 50000
+        },
+        "attainable": 0,
+        "flags2": 155648,
+        "displayName": "",
+        "qualityTier": 0,
+        "contains": []
+    },
+    "173397": {
+        "name_enus": "Black Empire Plate Leggings",
+        "quality": 3,
+        "icon": "inv_pant_plate_nzothraid_d_01",
+        "screenshot": {},
+        "jsonequip": {
+            "classes": 35,
+            "itemSquishEraId": 0,
+            "reqlevel": 50,
+            "sellprice": 50000
+        },
+        "attainable": 0,
+        "flags2": 155648,
+        "displayName": "",
+        "qualityTier": 0,
+        "contains": []
+    },
+    "173413": {
+        "name_enus": "Black Empire Leather Belt",
+        "quality": 3,
+        "icon": "inv_belt_leatherraidnzoth_d_01",
+        "screenshot": {},
+        "jsonequip": {
+            "classes": 3592,
+            "itemSquishEraId": 0,
+            "reqlevel": 50,
+            "sellprice": 50000
+        },
+        "attainable": 0,
+        "flags2": 155648,
+        "displayName": "",
+        "qualityTier": 0,
+        "contains": []
+    },
+    "173416": {
+        "name_enus": "Black Empire Cloth Gloves",
+        "quality": 3,
+        "icon": "inv_glove_cloth_nzothraid_d_01",
+        "screenshot": {},
+        "jsonequip": {
+            "classes": 400,
+            "itemSquishEraId": 0,
+            "reqlevel": 50,
+            "sellprice": 50000
+        },
+        "attainable": 0,
+        "flags2": 155648,
+        "displayName": "",
+        "qualityTier": 0,
+        "contains": []
+    },
+    "173401": {
+        "name_enus": "Black Empire Mail Boots",
+        "quality": 3,
+        "icon": "inv_boot_mail_nzothraid_d_01",
+        "screenshot": {},
+        "jsonequip": {
+            "classes": 4164,
+            "itemSquishEraId": 0,
+            "reqlevel": 50,
+            "sellprice": 50000
+        },
+        "attainable": 0,
+        "flags2": 155648,
+        "displayName": "",
+        "qualityTier": 0,
+        "contains": []
+    },
+    "173399": {
+        "name_enus": "Black Empire Plate Belt",
+        "quality": 3,
+        "icon": "inv_belt_plate_nzothraid_d_01",
+        "screenshot": {},
+        "jsonequip": {
+            "classes": 35,
+            "itemSquishEraId": 0,
+            "reqlevel": 50,
+            "sellprice": 50000
+        },
+        "attainable": 0,
+        "flags2": 155648,
+        "displayName": "",
+        "qualityTier": 0,
+        "contains": []
+    },
+    "173423": {
+        "name_enus": "Black Empire Cloth Bracers",
+        "quality": 3,
+        "icon": "inv_bracer_cloth_nzothraid_d_01",
+        "screenshot": {},
+        "jsonequip": {
+            "classes": 400,
+            "itemSquishEraId": 0,
+            "reqlevel": 50,
+            "sellprice": 50000
+        },
+        "attainable": 0,
+        "flags2": 155648,
+        "displayName": "",
+        "qualityTier": 0,
+        "contains": []
+    },
+    "173419": {
+        "name_enus": "Black Empire Cloth Spaulders",
+        "quality": 3,
+        "icon": "inv_shoulder_cloth_nzothraid_d_01",
+        "screenshot": {},
+        "jsonequip": {
+            "classes": 400,
+            "itemSquishEraId": 0,
+            "reqlevel": 50,
+            "sellprice": 50000
+        },
+        "attainable": 0,
+        "flags2": 155648,
+        "displayName": "",
+        "qualityTier": 0,
+        "contains": []
+    },
+    "173415": {
+        "name_enus": "Black Empire Cloth Boots",
+        "quality": 3,
+        "icon": "inv_boot_cloth_nzothraid_d_01",
+        "screenshot": {},
+        "jsonequip": {
+            "classes": 400,
+            "itemSquishEraId": 0,
+            "reqlevel": 50,
+            "sellprice": 50000
+        },
+        "attainable": 0,
+        "flags2": 155648,
+        "displayName": "",
+        "qualityTier": 0,
+        "contains": []
+    },
+    "173404": {
+        "name_enus": "Black Empire Mail Leggings",
+        "quality": 3,
+        "icon": "inv_pant_mail_nzothraid_d_01",
+        "screenshot": {},
+        "jsonequip": {
+            "classes": 4164,
+            "itemSquishEraId": 0,
+            "reqlevel": 50,
+            "sellprice": 50000
+        },
+        "attainable": 0,
+        "flags2": 155648,
+        "displayName": "",
+        "qualityTier": 0,
+        "contains": []
+    },
+    "173403": {
+        "name_enus": "Black Empire Mail Helm",
+        "quality": 3,
+        "icon": "inv_helm_mail_nzothraid_d_01",
+        "screenshot": {},
+        "jsonequip": {
+            "classes": 4164,
+            "itemSquishEraId": 0,
+            "reqlevel": 50,
+            "sellprice": 50000
+        },
+        "attainable": 0,
+        "flags2": 155648,
+        "displayName": "",
+        "qualityTier": 0,
+        "contains": []
+    },
+    "173396": {
+        "name_enus": "Black Empire Plate Helm",
+        "quality": 3,
+        "icon": "inv_helm_plate_nzothraid_d_01",
+        "screenshot": {},
+        "jsonequip": {
+            "classes": 35,
+            "itemSquishEraId": 0,
+            "reqlevel": 50,
+            "sellprice": 50000
+        },
+        "attainable": 0,
+        "flags2": 155648,
+        "displayName": "",
+        "qualityTier": 0,
+        "contains": []
+    },
+    "173408": {
+        "name_enus": "Black Empire Leather Boots",
+        "quality": 3,
+        "icon": "inv_boot_leatherraidnzoth_d_01",
+        "screenshot": {},
+        "jsonequip": {
+            "classes": 3592,
+            "itemSquishEraId": 0,
+            "reqlevel": 50,
+            "sellprice": 50000
+        },
+        "attainable": 0,
+        "flags2": 155648,
+        "displayName": "",
+        "qualityTier": 0,
+        "contains": []
+    },
+    "173411": {
+        "name_enus": "Black Empire Leather Leggings",
+        "quality": 3,
+        "icon": "inv_pant_leatherraidnzoth_d_01",
+        "screenshot": {},
+        "jsonequip": {
+            "classes": 3592,
+            "itemSquishEraId": 0,
+            "reqlevel": 50,
+            "sellprice": 50000
+        },
+        "attainable": 0,
+        "flags2": 155648,
+        "displayName": "",
+        "qualityTier": 0,
+        "contains": []
+    },
+    "173405": {
+        "name_enus": "Black Empire Mail Spaulders",
+        "quality": 3,
+        "icon": "inv_shoulder_mail_nzothraid_d_01",
+        "screenshot": {},
+        "jsonequip": {
+            "classes": 4164,
+            "itemSquishEraId": 0,
+            "reqlevel": 50,
+            "sellprice": 50000
+        },
+        "attainable": 0,
+        "flags2": 155648,
+        "displayName": "",
+        "qualityTier": 0,
+        "contains": []
+    },
+    "173402": {
+        "name_enus": "Black Empire Mail Gloves",
+        "quality": 3,
+        "icon": "inv_glove_mail_nzothraid_d_01",
+        "screenshot": {},
+        "jsonequip": {
+            "classes": 4164,
+            "itemSquishEraId": 0,
+            "reqlevel": 50,
+            "sellprice": 50000
+        },
+        "attainable": 0,
+        "flags2": 155648,
+        "displayName": "",
+        "qualityTier": 0,
+        "contains": []
+    },
+    "173420": {
+        "name_enus": "Black Empire Cloth Belt",
+        "quality": 3,
+        "icon": "inv_belt_cloth_nzothraid_d_01",
+        "screenshot": {},
+        "jsonequip": {
+            "classes": 400,
+            "itemSquishEraId": 0,
+            "reqlevel": 50,
+            "sellprice": 50000
+        },
+        "attainable": 0,
+        "flags2": 155648,
+        "displayName": "",
+        "qualityTier": 0,
+        "contains": []
+    },
+    "173425": {
+        "name_enus": "Black Empire Mail Bracers",
+        "quality": 3,
+        "icon": "inv_bracer_mail_nzothraid_d_01",
+        "screenshot": {},
+        "jsonequip": {
+            "classes": 4164,
+            "itemSquishEraId": 0,
+            "reqlevel": 50,
+            "sellprice": 50000
+        },
+        "attainable": 0,
+        "flags2": 155648,
+        "displayName": "",
+        "qualityTier": 0,
+        "contains": []
+    }
+}
