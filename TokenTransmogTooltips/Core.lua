@@ -65,20 +65,48 @@ function TTT:GetTooltipInfo(tokenLink)
     end
   end
 
-  local linksReceived = true
-  for classFileName, appearances in pairs(tokenData) do
-    local classIcon = ""
-    if ns.shadowlandsMultiClassLookup[classFileName] then
-      for _, fileName in ipairs(ns.shadowlandsMultiClassLookup[classFileName]) do
-        classIcon = classIcon .. CreateAtlasMarkup("ClassIcon-" .. fileName, 16, 16) .. " "
-      end
-    else
-      classIcon = CreateAtlasMarkup("ClassIcon-" .. classFileName, 16, 16)
+  -- Group classes that share identical appearance data so their icons
+  -- can be combined on the same tooltip row (e.g. Benthic armor-type tokens).
+  local function getAppearanceFingerprint(appearances)
+    local keys = {}
+    for appearanceId in pairs(appearances) do
+      keys[#keys + 1] = appearanceId
     end
+    table.sort(keys)
+    return table.concat(keys, ",")
+  end
+
+  local groups = {}       -- fingerprint -> { classes = {}, appearances = table }
+  local groupOrder = {}   -- ordered fingerprints for stable iteration
+  for classFileName, appearances in pairs(tokenData) do
+    local fp = getAppearanceFingerprint(appearances)
+    if not groups[fp] then
+      groups[fp] = { classes = {}, appearances = appearances }
+      groupOrder[#groupOrder + 1] = fp
+    end
+    groups[fp].classes[#groups[fp].classes + 1] = classFileName
+  end
+
+  local linksReceived = true
+  for _, fp in ipairs(groupOrder) do
+    local group = groups[fp]
+
+    -- Build combined class icons for all classes in this group
+    local classIcon = ""
+    for _, classFileName in ipairs(group.classes) do
+      if ns.shadowlandsMultiClassLookup[classFileName] then
+        for _, fileName in ipairs(ns.shadowlandsMultiClassLookup[classFileName]) do
+          classIcon = classIcon .. CreateAtlasMarkup("ClassIcon-" .. fileName, 16, 16) .. " "
+        end
+      else
+        classIcon = classIcon .. CreateAtlasMarkup("ClassIcon-" .. classFileName, 16, 16) .. " "
+      end
+    end
+
     local appearanceCount = 0
     local collectedAppearanceCount = 0
     local missingItems = {}
-    for appearanceId, modIds in pairs(appearances) do
+    for appearanceId, modIds in pairs(group.appearances) do
       appearanceCount = appearanceCount + 1
       local classCollectedAppearance = false
       local sources
@@ -108,7 +136,11 @@ function TTT:GetTooltipInfo(tokenLink)
           if linkType ~= "item" or displayText == "" or displayText == "[]" then
             linksReceived = false
           else
-            table.insert(missingItems, itemLink)
+            -- Track the item link and how many additional source items exist
+            table.insert(missingItems, {
+              itemLink = itemLink,
+              extraSources = #modIds - 1,
+            })
           end
         else
           linksReceived = false
@@ -122,18 +154,21 @@ function TTT:GetTooltipInfo(tokenLink)
 
     local leftText = classIcon
     if appearanceCount > collectedAppearanceCount then
-      for _, itemLink in ipairs(missingItems) do
-        local rightText = itemLink
+      for _, missing in ipairs(missingItems) do
+        local rightText = missing.itemLink
+        if missing.extraSources > 0 then
+          rightText = rightText .. " and " .. missing.extraSources .. " more"
+        end
         table.insert(tooltipInfo, {
           leftText = leftText,
-          rightText = rightText
+          rightText = rightText,
         })
       end
     else
       local rightText = COLLECTED
       table.insert(tooltipInfo, {
         leftText = leftText,
-        rightText = GREEN_FONT_COLOR:WrapTextInColorCode(rightText)
+        rightText = GREEN_FONT_COLOR:WrapTextInColorCode(rightText),
       })
     end
   end
