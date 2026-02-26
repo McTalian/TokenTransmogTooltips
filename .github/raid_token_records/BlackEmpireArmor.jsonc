@@ -14,7 +14,108 @@
         "flags2": 155648,
         "displayName": "",
         "qualityTier": 0,
-        "contains": []
+        "contains": [
+            {
+                "id": 173475,
+                "name": "Malignant Leviathan's Warboots",
+                "slot": 8,
+                "appearances": {
+                    "0": [
+                        181110,
+                        ""
+                    ]
+                },
+                "specs": [
+                    65,
+                    1451,
+                    66,
+                    250,
+                    251,
+                    1455,
+                    252,
+                    70,
+                    71,
+                    72,
+                    1446,
+                    73
+                ]
+            },
+            {
+                "id": 173498,
+                "name": "Malignant Leviathan's Boots",
+                "slot": 8,
+                "appearances": {
+                    "0": [
+                        181110,
+                        ""
+                    ]
+                },
+                "specs": [
+                    65,
+                    1451,
+                    66,
+                    250,
+                    251,
+                    1455,
+                    252,
+                    70,
+                    71,
+                    72,
+                    1446,
+                    73
+                ]
+            },
+            {
+                "id": 173455,
+                "name": "Malignant Leviathan's Stompers",
+                "slot": 8,
+                "appearances": {
+                    "0": [
+                        181110,
+                        ""
+                    ]
+                },
+                "specs": [
+                    65,
+                    1451,
+                    66,
+                    250,
+                    251,
+                    1455,
+                    252,
+                    70,
+                    71,
+                    72,
+                    1446,
+                    73
+                ]
+            },
+            {
+                "id": 173518,
+                "name": "Malignant Leviathan's Sabatons",
+                "slot": 8,
+                "appearances": {
+                    "0": [
+                        181110,
+                        ""
+                    ]
+                },
+                "specs": [
+                    65,
+                    1451,
+                    66,
+                    250,
+                    251,
+                    1455,
+                    252,
+                    70,
+                    71,
+                    72,
+                    1446,
+                    73
+                ]
+            }
+        ]
     },
     "173393": {
         "name_enus": "Black Empire Plate Chestpiece",
@@ -31,7 +132,58 @@
         "flags2": 155648,
         "displayName": "",
         "qualityTier": 0,
-        "contains": []
+        "contains": [
+            {
+                "id": 173837,
+                "name": "Malignant Leviathan's Hauberk",
+                "slot": 5,
+                "appearances": {
+                    "0": [
+                        181441,
+                        ""
+                    ]
+                },
+                "specs": [
+                    65,
+                    1451,
+                    66,
+                    250,
+                    251,
+                    1455,
+                    252,
+                    70,
+                    71,
+                    72,
+                    1446,
+                    73
+                ]
+            },
+            {
+                "id": 173454,
+                "name": "Malignant Leviathan's Chestplate",
+                "slot": 5,
+                "appearances": {
+                    "0": [
+                        181441,
+                        ""
+                    ]
+                },
+                "specs": [
+                    65,
+                    1451,
+                    66,
+                    250,
+                    251,
+                    1455,
+                    252,
+                    70,
+                    71,
+                    72,
+                    1446,
+                    73
+                ]
+            }
+        ]
     },
     "173409": {
         "name_enus": "Black Empire Leather Gloves",
@@ -48,7 +200,128 @@
         "flags2": 155648,
         "displayName": "",
         "qualityTier": 0,
-        "contains": []
+        "contains": [
+            {
+                "id": 173440,
+                "name": "Grips of the Insatiable Maw",
+                "slot": 10,
+                "appearances": {
+                    "0": [
+                        181044,
+                        ""
+                    ]
+                },
+                "specs": [
+                    102,
+                    1447,
+                    105,
+                    270,
+                    1450,
+                    581,
+                    268,
+                    1456,
+                    1480,
+                    577,
+                    103,
+                    104,
+                    269,
+                    259,
+                    1453,
+                    260,
+                    261
+                ]
+            },
+            {
+                "id": 173464,
+                "name": "Gloves of the Insatiable Maw",
+                "slot": 10,
+                "appearances": {
+                    "0": [
+                        181044,
+                        ""
+                    ]
+                },
+                "specs": [
+                    102,
+                    1447,
+                    105,
+                    270,
+                    1450,
+                    581,
+                    268,
+                    1456,
+                    1480,
+                    577,
+                    103,
+                    104,
+                    269,
+                    259,
+                    1453,
+                    260,
+                    261
+                ]
+            },
+            {
+                "id": 173492,
+                "name": "Handwraps of the Insatiable Maw",
+                "slot": 10,
+                "appearances": {
+                    "0": [
+                        181044,
+                        ""
+                    ]
+                },
+                "specs": [
+                    102,
+                    1447,
+                    105,
+                    270,
+                    1450,
+                    581,
+                    268,
+                    1456,
+                    1480,
+                    577,
+                    103,
+                    104,
+                    269,
+                    259,
+                    1453,
+                    260,
+                    261
+                ]
+            },
+            {
+                "id": 173508,
+                "name": "Handguards of the Insatiable Maw",
+                "slot": 10,
+                "appearances": {
+                    "0": [
+                        181044,
+                        ""
+                    ]
+                },
+                "specs": [
+                    102,
+                    1447,
+                    105,
+                    270,
+                    1450,
+                    581,
+                    268,
+                    1456,
+                    1480,
+                    577,
+                    103,
+                    104,
+                    269,
+                    259,
+                    1453,
+                    260,
+                    261
+                ]
+            }
+        ]
     },
     "173414": {
         "name_enus": "Black Empire Cloth Robes",
@@ -65,7 +338,58 @@
         "flags2": 155648,
         "displayName": "",
         "qualityTier": 0,
-        "contains": []
+        "contains": [
+            {
+                "id": 173458,
+                "name": "Vile Manipulator's Robe",
+                "slot": 20,
+                "appearances": {
+                    "0": [
+                        181206,
+                        ""
+                    ]
+                },
+                "specs": [
+                    62,
+                    1449,
+                    1452,
+                    256,
+                    63,
+                    64,
+                    265,
+                    257,
+                    258,
+                    266,
+                    267,
+                    1454
+                ]
+            },
+            {
+                "id": 173846,
+                "name": "Vile Manipulator's Vestment",
+                "slot": 20,
+                "appearances": {
+                    "0": [
+                        181206,
+                        ""
+                    ]
+                },
+                "specs": [
+                    62,
+                    1449,
+                    1452,
+                    256,
+                    63,
+                    64,
+                    265,
+                    257,
+                    258,
+                    266,
+                    267,
+                    1454
+                ]
+            }
+        ]
     },
     "173410": {
         "name_enus": "Black Empire Leather Helm",
@@ -82,7 +406,68 @@
         "flags2": 155648,
         "displayName": "",
         "qualityTier": 0,
-        "contains": []
+        "contains": [
+            {
+                "id": 173842,
+                "name": "Visage of the Insatiable Maw",
+                "slot": 1,
+                "appearances": {
+                    "0": [
+                        181400,
+                        ""
+                    ]
+                },
+                "specs": [
+                    102,
+                    1447,
+                    105,
+                    270,
+                    1450,
+                    581,
+                    268,
+                    1456,
+                    1480,
+                    577,
+                    103,
+                    104,
+                    269,
+                    259,
+                    1453,
+                    260,
+                    261
+                ]
+            },
+            {
+                "id": 173441,
+                "name": "Guise of the Insatiable Maw",
+                "slot": 1,
+                "appearances": {
+                    "0": [
+                        181400,
+                        ""
+                    ]
+                },
+                "specs": [
+                    102,
+                    1447,
+                    105,
+                    270,
+                    1450,
+                    581,
+                    268,
+                    1456,
+                    1480,
+                    577,
+                    103,
+                    104,
+                    269,
+                    259,
+                    1453,
+                    260,
+                    261
+                ]
+            }
+        ]
     },
     "173417": {
         "name_enus": "Black Empire Cloth Helm",
@@ -99,7 +484,58 @@
         "flags2": 155648,
         "displayName": "",
         "qualityTier": 0,
-        "contains": []
+        "contains": [
+            {
+                "id": 173433,
+                "name": "Vile Manipulator's Cowl",
+                "slot": 1,
+                "appearances": {
+                    "0": [
+                        181209,
+                        ""
+                    ]
+                },
+                "specs": [
+                    62,
+                    1449,
+                    1452,
+                    256,
+                    63,
+                    64,
+                    265,
+                    257,
+                    258,
+                    266,
+                    267,
+                    1454
+                ]
+            },
+            {
+                "id": 173845,
+                "name": "Vile Manipulator's Hood",
+                "slot": 1,
+                "appearances": {
+                    "0": [
+                        181209,
+                        ""
+                    ]
+                },
+                "specs": [
+                    62,
+                    1449,
+                    1452,
+                    256,
+                    63,
+                    64,
+                    265,
+                    257,
+                    258,
+                    266,
+                    267,
+                    1454
+                ]
+            }
+        ]
     },
     "173407": {
         "name_enus": "Black Empire Leather Chestpiece",
@@ -116,7 +552,68 @@
         "flags2": 155648,
         "displayName": "",
         "qualityTier": 0,
-        "contains": []
+        "contains": [
+            {
+                "id": 173438,
+                "name": "Chestguard of the Insatiable Maw",
+                "slot": 5,
+                "appearances": {
+                    "0": [
+                        181005,
+                        ""
+                    ]
+                },
+                "specs": [
+                    102,
+                    1447,
+                    105,
+                    270,
+                    1450,
+                    581,
+                    268,
+                    1456,
+                    1480,
+                    577,
+                    103,
+                    104,
+                    269,
+                    259,
+                    1453,
+                    260,
+                    261
+                ]
+            },
+            {
+                "id": 173843,
+                "name": "Vest of the Insatiable Maw",
+                "slot": 5,
+                "appearances": {
+                    "0": [
+                        181005,
+                        ""
+                    ]
+                },
+                "specs": [
+                    102,
+                    1447,
+                    105,
+                    270,
+                    1450,
+                    581,
+                    268,
+                    1456,
+                    1480,
+                    577,
+                    103,
+                    104,
+                    269,
+                    259,
+                    1453,
+                    260,
+                    261
+                ]
+            }
+        ]
     },
     "173424": {
         "name_enus": "Black Empire Leather Bracers",
@@ -133,7 +630,128 @@
         "flags2": 155648,
         "displayName": "",
         "qualityTier": 0,
-        "contains": []
+        "contains": [
+            {
+                "id": 173480,
+                "name": "Bindings of the Insatiable Maw",
+                "slot": 9,
+                "appearances": {
+                    "0": [
+                        181099,
+                        ""
+                    ]
+                },
+                "specs": [
+                    102,
+                    1447,
+                    105,
+                    270,
+                    1450,
+                    581,
+                    268,
+                    1456,
+                    1480,
+                    577,
+                    103,
+                    104,
+                    269,
+                    259,
+                    1453,
+                    260,
+                    261
+                ]
+            },
+            {
+                "id": 173489,
+                "name": "Coils of the Insatiable Maw",
+                "slot": 9,
+                "appearances": {
+                    "0": [
+                        181099,
+                        ""
+                    ]
+                },
+                "specs": [
+                    102,
+                    1447,
+                    105,
+                    270,
+                    1450,
+                    581,
+                    268,
+                    1456,
+                    1480,
+                    577,
+                    103,
+                    104,
+                    269,
+                    259,
+                    1453,
+                    260,
+                    261
+                ]
+            },
+            {
+                "id": 173445,
+                "name": "Wristwraps of the Insatiable Maw",
+                "slot": 9,
+                "appearances": {
+                    "0": [
+                        181099,
+                        ""
+                    ]
+                },
+                "specs": [
+                    102,
+                    1447,
+                    105,
+                    270,
+                    1450,
+                    581,
+                    268,
+                    1456,
+                    1480,
+                    577,
+                    103,
+                    104,
+                    269,
+                    259,
+                    1453,
+                    260,
+                    261
+                ]
+            },
+            {
+                "id": 173472,
+                "name": "Armguards of the Insatiable Maw",
+                "slot": 9,
+                "appearances": {
+                    "0": [
+                        181099,
+                        ""
+                    ]
+                },
+                "specs": [
+                    102,
+                    1447,
+                    105,
+                    270,
+                    1450,
+                    581,
+                    268,
+                    1456,
+                    1480,
+                    577,
+                    103,
+                    104,
+                    269,
+                    259,
+                    1453,
+                    260,
+                    261
+                ]
+            }
+        ]
     },
     "173418": {
         "name_enus": "Black Empire Cloth Leggings",
@@ -150,7 +768,108 @@
         "flags2": 155648,
         "displayName": "",
         "qualityTier": 0,
-        "contains": []
+        "contains": [
+            {
+                "id": 173483,
+                "name": "Vile Manipulator's Pants",
+                "slot": 7,
+                "appearances": {
+                    "0": [
+                        181391,
+                        ""
+                    ]
+                },
+                "specs": [
+                    62,
+                    1449,
+                    1452,
+                    256,
+                    63,
+                    64,
+                    265,
+                    257,
+                    258,
+                    266,
+                    267,
+                    1454
+                ]
+            },
+            {
+                "id": 173434,
+                "name": "Vile Manipulator's Leggings",
+                "slot": 7,
+                "appearances": {
+                    "0": [
+                        181391,
+                        ""
+                    ]
+                },
+                "specs": [
+                    62,
+                    1449,
+                    1452,
+                    256,
+                    63,
+                    64,
+                    265,
+                    257,
+                    258,
+                    266,
+                    267,
+                    1454
+                ]
+            },
+            {
+                "id": 173467,
+                "name": "Vile Manipulator's Legwraps",
+                "slot": 7,
+                "appearances": {
+                    "0": [
+                        181391,
+                        ""
+                    ]
+                },
+                "specs": [
+                    62,
+                    1449,
+                    1452,
+                    256,
+                    63,
+                    64,
+                    265,
+                    257,
+                    258,
+                    266,
+                    267,
+                    1454
+                ]
+            },
+            {
+                "id": 173811,
+                "name": "Vile Manipulator's Trousers",
+                "slot": 7,
+                "appearances": {
+                    "0": [
+                        181391,
+                        ""
+                    ]
+                },
+                "specs": [
+                    62,
+                    1449,
+                    1452,
+                    256,
+                    63,
+                    64,
+                    265,
+                    257,
+                    258,
+                    266,
+                    267,
+                    1454
+                ]
+            }
+        ]
     },
     "173406": {
         "name_enus": "Black Empire Mail Belt",
@@ -167,7 +886,108 @@
         "flags2": 155648,
         "displayName": "",
         "qualityTier": 0,
-        "contains": []
+        "contains": [
+            {
+                "id": 173819,
+                "name": "Nefarious Tormentor's Waistguard",
+                "slot": 6,
+                "appearances": {
+                    "0": [
+                        181427,
+                        ""
+                    ]
+                },
+                "specs": [
+                    253,
+                    262,
+                    1468,
+                    1444,
+                    264,
+                    1473,
+                    1465,
+                    1467,
+                    1448,
+                    254,
+                    255,
+                    263
+                ]
+            },
+            {
+                "id": 173452,
+                "name": "Nefarious Tormentor's Belt",
+                "slot": 6,
+                "appearances": {
+                    "0": [
+                        181427,
+                        ""
+                    ]
+                },
+                "specs": [
+                    253,
+                    262,
+                    1468,
+                    1444,
+                    264,
+                    1473,
+                    1465,
+                    1467,
+                    1448,
+                    254,
+                    255,
+                    263
+                ]
+            },
+            {
+                "id": 173513,
+                "name": "Nefarious Tormentor's Chain",
+                "slot": 6,
+                "appearances": {
+                    "0": [
+                        181427,
+                        ""
+                    ]
+                },
+                "specs": [
+                    253,
+                    262,
+                    1468,
+                    1444,
+                    264,
+                    1473,
+                    1465,
+                    1467,
+                    1448,
+                    254,
+                    255,
+                    263
+                ]
+            },
+            {
+                "id": 173818,
+                "name": "Nefarious Tormentor's Girdle",
+                "slot": 6,
+                "appearances": {
+                    "0": [
+                        181427,
+                        ""
+                    ]
+                },
+                "specs": [
+                    253,
+                    262,
+                    1468,
+                    1444,
+                    264,
+                    1473,
+                    1465,
+                    1467,
+                    1448,
+                    254,
+                    255,
+                    263
+                ]
+            }
+        ]
     },
     "173398": {
         "name_enus": "Black Empire Plate Spaulders",
@@ -184,7 +1004,58 @@
         "flags2": 155648,
         "displayName": "",
         "qualityTier": 0,
-        "contains": []
+        "contains": [
+            {
+                "id": 173460,
+                "name": "Malignant Leviathan's Spaulders",
+                "slot": 3,
+                "appearances": {
+                    "0": [
+                        181126,
+                        ""
+                    ]
+                },
+                "specs": [
+                    65,
+                    1451,
+                    66,
+                    250,
+                    251,
+                    1455,
+                    252,
+                    70,
+                    71,
+                    72,
+                    1446,
+                    73
+                ]
+            },
+            {
+                "id": 173835,
+                "name": "Malignant Leviathan's Pauldrons",
+                "slot": 3,
+                "appearances": {
+                    "0": [
+                        181126,
+                        ""
+                    ]
+                },
+                "specs": [
+                    65,
+                    1451,
+                    66,
+                    250,
+                    251,
+                    1455,
+                    252,
+                    70,
+                    71,
+                    72,
+                    1446,
+                    73
+                ]
+            }
+        ]
     },
     "173400": {
         "name_enus": "Black Empire Mail Chestpiece",
@@ -201,7 +1072,58 @@
         "flags2": 155648,
         "displayName": "",
         "qualityTier": 0,
-        "contains": []
+        "contains": [
+            {
+                "id": 173446,
+                "name": "Nefarious Tormentor's Breastplate",
+                "slot": 5,
+                "appearances": {
+                    "0": [
+                        180849,
+                        ""
+                    ]
+                },
+                "specs": [
+                    253,
+                    262,
+                    1468,
+                    1444,
+                    264,
+                    1473,
+                    1465,
+                    1467,
+                    1448,
+                    254,
+                    255,
+                    263
+                ]
+            },
+            {
+                "id": 173840,
+                "name": "Nefarious Tormentor's Chestpiece",
+                "slot": 5,
+                "appearances": {
+                    "0": [
+                        180849,
+                        ""
+                    ]
+                },
+                "specs": [
+                    253,
+                    262,
+                    1468,
+                    1444,
+                    264,
+                    1473,
+                    1465,
+                    1467,
+                    1448,
+                    254,
+                    255,
+                    263
+                ]
+            }
+        ]
     },
     "173412": {
         "name_enus": "Black Empire Leather Spaulders",
@@ -218,7 +1140,68 @@
         "flags2": 155648,
         "displayName": "",
         "qualityTier": 0,
-        "contains": []
+        "contains": [
+            {
+                "id": 173443,
+                "name": "Shoulderpads of the Insatiable Maw",
+                "slot": 3,
+                "appearances": {
+                    "0": [
+                        181077,
+                        ""
+                    ]
+                },
+                "specs": [
+                    102,
+                    1447,
+                    105,
+                    270,
+                    1450,
+                    581,
+                    268,
+                    1456,
+                    1480,
+                    577,
+                    103,
+                    104,
+                    269,
+                    259,
+                    1453,
+                    260,
+                    261
+                ]
+            },
+            {
+                "id": 173841,
+                "name": "Mantle of the Insatiable Maw",
+                "slot": 3,
+                "appearances": {
+                    "0": [
+                        181077,
+                        ""
+                    ]
+                },
+                "specs": [
+                    102,
+                    1447,
+                    105,
+                    270,
+                    1450,
+                    581,
+                    268,
+                    1456,
+                    1480,
+                    577,
+                    103,
+                    104,
+                    269,
+                    259,
+                    1453,
+                    260,
+                    261
+                ]
+            }
+        ]
     },
     "173422": {
         "name_enus": "Black Empire Plate Bracers",
@@ -235,7 +1218,108 @@
         "flags2": 155648,
         "displayName": "",
         "qualityTier": 0,
-        "contains": []
+        "contains": [
+            {
+                "id": 173482,
+                "name": "Malignant Leviathan's Wristguards",
+                "slot": 9,
+                "appearances": {
+                    "0": [
+                        181133,
+                        ""
+                    ]
+                },
+                "specs": [
+                    65,
+                    1451,
+                    66,
+                    250,
+                    251,
+                    1455,
+                    252,
+                    70,
+                    71,
+                    72,
+                    1446,
+                    73
+                ]
+            },
+            {
+                "id": 173487,
+                "name": "Malignant Leviathan's Coils",
+                "slot": 9,
+                "appearances": {
+                    "0": [
+                        181133,
+                        ""
+                    ]
+                },
+                "specs": [
+                    65,
+                    1451,
+                    66,
+                    250,
+                    251,
+                    1455,
+                    252,
+                    70,
+                    71,
+                    72,
+                    1446,
+                    73
+                ]
+            },
+            {
+                "id": 173462,
+                "name": "Malignant Leviathan's Armguards",
+                "slot": 9,
+                "appearances": {
+                    "0": [
+                        181133,
+                        ""
+                    ]
+                },
+                "specs": [
+                    65,
+                    1451,
+                    66,
+                    250,
+                    251,
+                    1455,
+                    252,
+                    70,
+                    71,
+                    72,
+                    1446,
+                    73
+                ]
+            },
+            {
+                "id": 173474,
+                "name": "Malignant Leviathan's Vambraces",
+                "slot": 9,
+                "appearances": {
+                    "0": [
+                        181133,
+                        ""
+                    ]
+                },
+                "specs": [
+                    65,
+                    1451,
+                    66,
+                    250,
+                    251,
+                    1455,
+                    252,
+                    70,
+                    71,
+                    72,
+                    1446,
+                    73
+                ]
+            }
+        ]
     },
     "173395": {
         "name_enus": "Black Empire Plate Gloves",
@@ -252,7 +1336,108 @@
         "flags2": 155648,
         "displayName": "",
         "qualityTier": 0,
-        "contains": []
+        "contains": [
+            {
+                "id": 173510,
+                "name": "Malignant Leviathan's Handguards",
+                "slot": 10,
+                "appearances": {
+                    "0": [
+                        181114,
+                        ""
+                    ]
+                },
+                "specs": [
+                    65,
+                    1451,
+                    66,
+                    250,
+                    251,
+                    1455,
+                    252,
+                    70,
+                    71,
+                    72,
+                    1446,
+                    73
+                ]
+            },
+            {
+                "id": 173494,
+                "name": "Malignant Leviathan's Fists",
+                "slot": 10,
+                "appearances": {
+                    "0": [
+                        181114,
+                        ""
+                    ]
+                },
+                "specs": [
+                    65,
+                    1451,
+                    66,
+                    250,
+                    251,
+                    1455,
+                    252,
+                    70,
+                    71,
+                    72,
+                    1446,
+                    73
+                ]
+            },
+            {
+                "id": 173466,
+                "name": "Malignant Leviathan's Gauntlets",
+                "slot": 10,
+                "appearances": {
+                    "0": [
+                        181114,
+                        ""
+                    ]
+                },
+                "specs": [
+                    65,
+                    1451,
+                    66,
+                    250,
+                    251,
+                    1455,
+                    252,
+                    70,
+                    71,
+                    72,
+                    1446,
+                    73
+                ]
+            },
+            {
+                "id": 173456,
+                "name": "Malignant Leviathan's Crushers",
+                "slot": 10,
+                "appearances": {
+                    "0": [
+                        181114,
+                        ""
+                    ]
+                },
+                "specs": [
+                    65,
+                    1451,
+                    66,
+                    250,
+                    251,
+                    1455,
+                    252,
+                    70,
+                    71,
+                    72,
+                    1446,
+                    73
+                ]
+            }
+        ]
     },
     "173397": {
         "name_enus": "Black Empire Plate Leggings",
@@ -269,7 +1454,108 @@
         "flags2": 155648,
         "displayName": "",
         "qualityTier": 0,
-        "contains": []
+        "contains": [
+            {
+                "id": 173820,
+                "name": "Malignant Leviathan's Greaves",
+                "slot": 7,
+                "appearances": {
+                    "0": [
+                        181455,
+                        ""
+                    ]
+                },
+                "specs": [
+                    65,
+                    1451,
+                    66,
+                    250,
+                    251,
+                    1455,
+                    252,
+                    70,
+                    71,
+                    72,
+                    1446,
+                    73
+                ]
+            },
+            {
+                "id": 173470,
+                "name": "Malignant Leviathan's Legguards",
+                "slot": 7,
+                "appearances": {
+                    "0": [
+                        181455,
+                        ""
+                    ]
+                },
+                "specs": [
+                    65,
+                    1451,
+                    66,
+                    250,
+                    251,
+                    1455,
+                    252,
+                    70,
+                    71,
+                    72,
+                    1446,
+                    73
+                ]
+            },
+            {
+                "id": 173486,
+                "name": "Malignant Leviathan's Legplates",
+                "slot": 7,
+                "appearances": {
+                    "0": [
+                        181455,
+                        ""
+                    ]
+                },
+                "specs": [
+                    65,
+                    1451,
+                    66,
+                    250,
+                    251,
+                    1455,
+                    252,
+                    70,
+                    71,
+                    72,
+                    1446,
+                    73
+                ]
+            },
+            {
+                "id": 173459,
+                "name": "Malignant Leviathan's Wargreaves",
+                "slot": 7,
+                "appearances": {
+                    "0": [
+                        181455,
+                        ""
+                    ]
+                },
+                "specs": [
+                    65,
+                    1451,
+                    66,
+                    250,
+                    251,
+                    1455,
+                    252,
+                    70,
+                    71,
+                    72,
+                    1446,
+                    73
+                ]
+            }
+        ]
     },
     "173413": {
         "name_enus": "Black Empire Leather Belt",
@@ -286,7 +1572,128 @@
         "flags2": 155648,
         "displayName": "",
         "qualityTier": 0,
-        "contains": []
+        "contains": [
+            {
+                "id": 173815,
+                "name": "Girdle of the Insatiable Maw",
+                "slot": 6,
+                "appearances": {
+                    "0": [
+                        181411,
+                        ""
+                    ]
+                },
+                "specs": [
+                    102,
+                    1447,
+                    105,
+                    270,
+                    1450,
+                    581,
+                    268,
+                    1456,
+                    1480,
+                    577,
+                    103,
+                    104,
+                    269,
+                    259,
+                    1453,
+                    260,
+                    261
+                ]
+            },
+            {
+                "id": 173512,
+                "name": "Grasp of the Insatiable Maw",
+                "slot": 6,
+                "appearances": {
+                    "0": [
+                        181411,
+                        ""
+                    ]
+                },
+                "specs": [
+                    102,
+                    1447,
+                    105,
+                    270,
+                    1450,
+                    581,
+                    268,
+                    1456,
+                    1480,
+                    577,
+                    103,
+                    104,
+                    269,
+                    259,
+                    1453,
+                    260,
+                    261
+                ]
+            },
+            {
+                "id": 173444,
+                "name": "Waistguard of the Insatiable Maw",
+                "slot": 6,
+                "appearances": {
+                    "0": [
+                        181411,
+                        ""
+                    ]
+                },
+                "specs": [
+                    102,
+                    1447,
+                    105,
+                    270,
+                    1450,
+                    581,
+                    268,
+                    1456,
+                    1480,
+                    577,
+                    103,
+                    104,
+                    269,
+                    259,
+                    1453,
+                    260,
+                    261
+                ]
+            },
+            {
+                "id": 173816,
+                "name": "Belt of the Insatiable Maw",
+                "slot": 6,
+                "appearances": {
+                    "0": [
+                        181411,
+                        ""
+                    ]
+                },
+                "specs": [
+                    102,
+                    1447,
+                    105,
+                    270,
+                    1450,
+                    581,
+                    268,
+                    1456,
+                    1480,
+                    577,
+                    103,
+                    104,
+                    269,
+                    259,
+                    1453,
+                    260,
+                    261
+                ]
+            }
+        ]
     },
     "173416": {
         "name_enus": "Black Empire Cloth Gloves",
@@ -303,7 +1710,108 @@
         "flags2": 155648,
         "displayName": "",
         "qualityTier": 0,
-        "contains": []
+        "contains": [
+            {
+                "id": 173507,
+                "name": "Vile Manipulator's Handguards",
+                "slot": 10,
+                "appearances": {
+                    "0": [
+                        181181,
+                        ""
+                    ]
+                },
+                "specs": [
+                    62,
+                    1449,
+                    1452,
+                    256,
+                    63,
+                    64,
+                    265,
+                    257,
+                    258,
+                    266,
+                    267,
+                    1454
+                ]
+            },
+            {
+                "id": 173463,
+                "name": "Vile Manipulator's Gloves",
+                "slot": 10,
+                "appearances": {
+                    "0": [
+                        181181,
+                        ""
+                    ]
+                },
+                "specs": [
+                    62,
+                    1449,
+                    1452,
+                    256,
+                    63,
+                    64,
+                    265,
+                    257,
+                    258,
+                    266,
+                    267,
+                    1454
+                ]
+            },
+            {
+                "id": 173432,
+                "name": "Vile Manipulator's Handwraps",
+                "slot": 10,
+                "appearances": {
+                    "0": [
+                        181181,
+                        ""
+                    ]
+                },
+                "specs": [
+                    62,
+                    1449,
+                    1452,
+                    256,
+                    63,
+                    64,
+                    265,
+                    257,
+                    258,
+                    266,
+                    267,
+                    1454
+                ]
+            },
+            {
+                "id": 173491,
+                "name": "Vile Manipulator's Grips",
+                "slot": 10,
+                "appearances": {
+                    "0": [
+                        181181,
+                        ""
+                    ]
+                },
+                "specs": [
+                    62,
+                    1449,
+                    1452,
+                    256,
+                    63,
+                    64,
+                    265,
+                    257,
+                    258,
+                    266,
+                    267,
+                    1454
+                ]
+            }
+        ]
     },
     "173401": {
         "name_enus": "Black Empire Mail Boots",
@@ -320,7 +1828,108 @@
         "flags2": 155648,
         "displayName": "",
         "qualityTier": 0,
-        "contains": []
+        "contains": [
+            {
+                "id": 173497,
+                "name": "Nefarious Tormentor's Treads",
+                "slot": 8,
+                "appearances": {
+                    "0": [
+                        180853,
+                        ""
+                    ]
+                },
+                "specs": [
+                    253,
+                    262,
+                    1468,
+                    1444,
+                    264,
+                    1473,
+                    1465,
+                    1467,
+                    1448,
+                    254,
+                    255,
+                    263
+                ]
+            },
+            {
+                "id": 173517,
+                "name": "Nefarious Tormentor's Striders",
+                "slot": 8,
+                "appearances": {
+                    "0": [
+                        180853,
+                        ""
+                    ]
+                },
+                "specs": [
+                    253,
+                    262,
+                    1468,
+                    1444,
+                    264,
+                    1473,
+                    1465,
+                    1467,
+                    1448,
+                    254,
+                    255,
+                    263
+                ]
+            },
+            {
+                "id": 173447,
+                "name": "Nefarious Tormentor's Footguards",
+                "slot": 8,
+                "appearances": {
+                    "0": [
+                        180853,
+                        ""
+                    ]
+                },
+                "specs": [
+                    253,
+                    262,
+                    1468,
+                    1444,
+                    264,
+                    1473,
+                    1465,
+                    1467,
+                    1448,
+                    254,
+                    255,
+                    263
+                ]
+            },
+            {
+                "id": 173476,
+                "name": "Nefarious Tormentor's Boots",
+                "slot": 8,
+                "appearances": {
+                    "0": [
+                        180853,
+                        ""
+                    ]
+                },
+                "specs": [
+                    253,
+                    262,
+                    1468,
+                    1444,
+                    264,
+                    1473,
+                    1465,
+                    1467,
+                    1448,
+                    254,
+                    255,
+                    263
+                ]
+            }
+        ]
     },
     "173399": {
         "name_enus": "Black Empire Plate Belt",
@@ -337,7 +1946,108 @@
         "flags2": 155648,
         "displayName": "",
         "qualityTier": 0,
-        "contains": []
+        "contains": [
+            {
+                "id": 173514,
+                "name": "Malignant Leviathan's Girdle",
+                "slot": 6,
+                "appearances": {
+                    "0": [
+                        181448,
+                        ""
+                    ]
+                },
+                "specs": [
+                    65,
+                    1451,
+                    66,
+                    250,
+                    251,
+                    1455,
+                    252,
+                    70,
+                    71,
+                    72,
+                    1446,
+                    73
+                ]
+            },
+            {
+                "id": 173822,
+                "name": "Malignant Leviathan's Waistguard",
+                "slot": 6,
+                "appearances": {
+                    "0": [
+                        181448,
+                        ""
+                    ]
+                },
+                "specs": [
+                    65,
+                    1451,
+                    66,
+                    250,
+                    251,
+                    1455,
+                    252,
+                    70,
+                    71,
+                    72,
+                    1446,
+                    73
+                ]
+            },
+            {
+                "id": 173461,
+                "name": "Malignant Leviathan's Greatbelt",
+                "slot": 6,
+                "appearances": {
+                    "0": [
+                        181448,
+                        ""
+                    ]
+                },
+                "specs": [
+                    65,
+                    1451,
+                    66,
+                    250,
+                    251,
+                    1455,
+                    252,
+                    70,
+                    71,
+                    72,
+                    1446,
+                    73
+                ]
+            },
+            {
+                "id": 173821,
+                "name": "Malignant Leviathan's Clasp",
+                "slot": 6,
+                "appearances": {
+                    "0": [
+                        181448,
+                        ""
+                    ]
+                },
+                "specs": [
+                    65,
+                    1451,
+                    66,
+                    250,
+                    251,
+                    1455,
+                    252,
+                    70,
+                    71,
+                    72,
+                    1446,
+                    73
+                ]
+            }
+        ]
     },
     "173423": {
         "name_enus": "Black Empire Cloth Bracers",
@@ -354,7 +2064,108 @@
         "flags2": 155648,
         "displayName": "",
         "qualityTier": 0,
-        "contains": []
+        "contains": [
+            {
+                "id": 173437,
+                "name": "Vile Manipulator's Wristwraps",
+                "slot": 9,
+                "appearances": {
+                    "0": [
+                        181201,
+                        ""
+                    ]
+                },
+                "specs": [
+                    62,
+                    1449,
+                    1452,
+                    256,
+                    63,
+                    64,
+                    265,
+                    257,
+                    258,
+                    266,
+                    267,
+                    1454
+                ]
+            },
+            {
+                "id": 173490,
+                "name": "Vile Manipulator's Bracelets",
+                "slot": 9,
+                "appearances": {
+                    "0": [
+                        181201,
+                        ""
+                    ]
+                },
+                "specs": [
+                    62,
+                    1449,
+                    1452,
+                    256,
+                    63,
+                    64,
+                    265,
+                    257,
+                    258,
+                    266,
+                    267,
+                    1454
+                ]
+            },
+            {
+                "id": 173479,
+                "name": "Vile Manipulator's Armwraps",
+                "slot": 9,
+                "appearances": {
+                    "0": [
+                        181201,
+                        ""
+                    ]
+                },
+                "specs": [
+                    62,
+                    1449,
+                    1452,
+                    256,
+                    63,
+                    64,
+                    265,
+                    257,
+                    258,
+                    266,
+                    267,
+                    1454
+                ]
+            },
+            {
+                "id": 173471,
+                "name": "Vile Manipulator's Cuffs",
+                "slot": 9,
+                "appearances": {
+                    "0": [
+                        181201,
+                        ""
+                    ]
+                },
+                "specs": [
+                    62,
+                    1449,
+                    1452,
+                    256,
+                    63,
+                    64,
+                    265,
+                    257,
+                    258,
+                    266,
+                    267,
+                    1454
+                ]
+            }
+        ]
     },
     "173419": {
         "name_enus": "Black Empire Cloth Spaulders",
@@ -371,7 +2182,58 @@
         "flags2": 155648,
         "displayName": "",
         "qualityTier": 0,
-        "contains": []
+        "contains": [
+            {
+                "id": 173844,
+                "name": "Vile Manipulator's Amice",
+                "slot": 3,
+                "appearances": {
+                    "0": [
+                        181193,
+                        ""
+                    ]
+                },
+                "specs": [
+                    62,
+                    1449,
+                    1452,
+                    256,
+                    63,
+                    64,
+                    265,
+                    257,
+                    258,
+                    266,
+                    267,
+                    1454
+                ]
+            },
+            {
+                "id": 173435,
+                "name": "Vile Manipulator's Mantle",
+                "slot": 3,
+                "appearances": {
+                    "0": [
+                        181193,
+                        ""
+                    ]
+                },
+                "specs": [
+                    62,
+                    1449,
+                    1452,
+                    256,
+                    63,
+                    64,
+                    265,
+                    257,
+                    258,
+                    266,
+                    267,
+                    1454
+                ]
+            }
+        ]
     },
     "173415": {
         "name_enus": "Black Empire Cloth Boots",
@@ -388,7 +2250,108 @@
         "flags2": 155648,
         "displayName": "",
         "qualityTier": 0,
-        "contains": []
+        "contains": [
+            {
+                "id": 173495,
+                "name": "Vile Manipulator's Soles",
+                "slot": 8,
+                "appearances": {
+                    "0": [
+                        181221,
+                        ""
+                    ]
+                },
+                "specs": [
+                    62,
+                    1449,
+                    1452,
+                    256,
+                    63,
+                    64,
+                    265,
+                    257,
+                    258,
+                    266,
+                    267,
+                    1454
+                ]
+            },
+            {
+                "id": 173478,
+                "name": "Vile Manipulator's Treads",
+                "slot": 8,
+                "appearances": {
+                    "0": [
+                        181221,
+                        ""
+                    ]
+                },
+                "specs": [
+                    62,
+                    1449,
+                    1452,
+                    256,
+                    63,
+                    64,
+                    265,
+                    257,
+                    258,
+                    266,
+                    267,
+                    1454
+                ]
+            },
+            {
+                "id": 173515,
+                "name": "Vile Manipulator's Slippers",
+                "slot": 8,
+                "appearances": {
+                    "0": [
+                        181221,
+                        ""
+                    ]
+                },
+                "specs": [
+                    62,
+                    1449,
+                    1452,
+                    256,
+                    63,
+                    64,
+                    265,
+                    257,
+                    258,
+                    266,
+                    267,
+                    1454
+                ]
+            },
+            {
+                "id": 173431,
+                "name": "Vile Manipulator's Footwraps",
+                "slot": 8,
+                "appearances": {
+                    "0": [
+                        181221,
+                        ""
+                    ]
+                },
+                "specs": [
+                    62,
+                    1449,
+                    1452,
+                    256,
+                    63,
+                    64,
+                    265,
+                    257,
+                    258,
+                    266,
+                    267,
+                    1454
+                ]
+            }
+        ]
     },
     "173404": {
         "name_enus": "Black Empire Mail Leggings",
@@ -405,7 +2368,108 @@
         "flags2": 155648,
         "displayName": "",
         "qualityTier": 0,
-        "contains": []
+        "contains": [
+            {
+                "id": 173817,
+                "name": "Nefarious Tormentor's Trousers",
+                "slot": 7,
+                "appearances": {
+                    "0": [
+                        180869,
+                        ""
+                    ]
+                },
+                "specs": [
+                    253,
+                    262,
+                    1468,
+                    1444,
+                    264,
+                    1473,
+                    1465,
+                    1467,
+                    1448,
+                    254,
+                    255,
+                    263
+                ]
+            },
+            {
+                "id": 173450,
+                "name": "Nefarious Tormentor's Legguards",
+                "slot": 7,
+                "appearances": {
+                    "0": [
+                        180869,
+                        ""
+                    ]
+                },
+                "specs": [
+                    253,
+                    262,
+                    1468,
+                    1444,
+                    264,
+                    1473,
+                    1465,
+                    1467,
+                    1448,
+                    254,
+                    255,
+                    263
+                ]
+            },
+            {
+                "id": 173469,
+                "name": "Nefarious Tormentor's Greaves",
+                "slot": 7,
+                "appearances": {
+                    "0": [
+                        180869,
+                        ""
+                    ]
+                },
+                "specs": [
+                    253,
+                    262,
+                    1468,
+                    1444,
+                    264,
+                    1473,
+                    1465,
+                    1467,
+                    1448,
+                    254,
+                    255,
+                    263
+                ]
+            },
+            {
+                "id": 173485,
+                "name": "Nefarious Tormentor's Leggings",
+                "slot": 7,
+                "appearances": {
+                    "0": [
+                        180869,
+                        ""
+                    ]
+                },
+                "specs": [
+                    253,
+                    262,
+                    1468,
+                    1444,
+                    264,
+                    1473,
+                    1465,
+                    1467,
+                    1448,
+                    254,
+                    255,
+                    263
+                ]
+            }
+        ]
     },
     "173403": {
         "name_enus": "Black Empire Mail Helm",
@@ -422,7 +2486,58 @@
         "flags2": 155648,
         "displayName": "",
         "qualityTier": 0,
-        "contains": []
+        "contains": [
+            {
+                "id": 173839,
+                "name": "Nefarious Tormentor's Cover",
+                "slot": 1,
+                "appearances": {
+                    "0": [
+                        181421,
+                        ""
+                    ]
+                },
+                "specs": [
+                    253,
+                    262,
+                    1468,
+                    1444,
+                    264,
+                    1473,
+                    1465,
+                    1467,
+                    1448,
+                    254,
+                    255,
+                    263
+                ]
+            },
+            {
+                "id": 173449,
+                "name": "Nefarious Tormentor's Mask",
+                "slot": 1,
+                "appearances": {
+                    "0": [
+                        181421,
+                        ""
+                    ]
+                },
+                "specs": [
+                    253,
+                    262,
+                    1468,
+                    1444,
+                    264,
+                    1473,
+                    1465,
+                    1467,
+                    1448,
+                    254,
+                    255,
+                    263
+                ]
+            }
+        ]
     },
     "173396": {
         "name_enus": "Black Empire Plate Helm",
@@ -439,7 +2554,58 @@
         "flags2": 155648,
         "displayName": "",
         "qualityTier": 0,
-        "contains": []
+        "contains": [
+            {
+                "id": 173836,
+                "name": "Malignant Leviathan's Helm",
+                "slot": 1,
+                "appearances": {
+                    "0": [
+                        181431,
+                        ""
+                    ]
+                },
+                "specs": [
+                    65,
+                    1451,
+                    66,
+                    250,
+                    251,
+                    1455,
+                    252,
+                    70,
+                    71,
+                    72,
+                    1446,
+                    73
+                ]
+            },
+            {
+                "id": 173457,
+                "name": "Malignant Leviathan's Headguard",
+                "slot": 1,
+                "appearances": {
+                    "0": [
+                        181431,
+                        ""
+                    ]
+                },
+                "specs": [
+                    65,
+                    1451,
+                    66,
+                    250,
+                    251,
+                    1455,
+                    252,
+                    70,
+                    71,
+                    72,
+                    1446,
+                    73
+                ]
+            }
+        ]
     },
     "173408": {
         "name_enus": "Black Empire Leather Boots",
@@ -456,7 +2622,128 @@
         "flags2": 155648,
         "displayName": "",
         "qualityTier": 0,
-        "contains": []
+        "contains": [
+            {
+                "id": 173439,
+                "name": "Footpads of the Insatiable Maw",
+                "slot": 8,
+                "appearances": {
+                    "0": [
+                        182759,
+                        ""
+                    ]
+                },
+                "specs": [
+                    102,
+                    1447,
+                    105,
+                    270,
+                    1450,
+                    581,
+                    268,
+                    1456,
+                    1480,
+                    577,
+                    103,
+                    104,
+                    269,
+                    259,
+                    1453,
+                    260,
+                    261
+                ]
+            },
+            {
+                "id": 173477,
+                "name": "Boots of the Insatiable Maw",
+                "slot": 8,
+                "appearances": {
+                    "0": [
+                        182759,
+                        ""
+                    ]
+                },
+                "specs": [
+                    102,
+                    1447,
+                    105,
+                    270,
+                    1450,
+                    581,
+                    268,
+                    1456,
+                    1480,
+                    577,
+                    103,
+                    104,
+                    269,
+                    259,
+                    1453,
+                    260,
+                    261
+                ]
+            },
+            {
+                "id": 173516,
+                "name": "Footguards of the Insatiable Maw",
+                "slot": 8,
+                "appearances": {
+                    "0": [
+                        182759,
+                        ""
+                    ]
+                },
+                "specs": [
+                    102,
+                    1447,
+                    105,
+                    270,
+                    1450,
+                    581,
+                    268,
+                    1456,
+                    1480,
+                    577,
+                    103,
+                    104,
+                    269,
+                    259,
+                    1453,
+                    260,
+                    261
+                ]
+            },
+            {
+                "id": 173496,
+                "name": "Footwraps of the Insatiable Maw",
+                "slot": 8,
+                "appearances": {
+                    "0": [
+                        182759,
+                        ""
+                    ]
+                },
+                "specs": [
+                    102,
+                    1447,
+                    105,
+                    270,
+                    1450,
+                    581,
+                    268,
+                    1456,
+                    1480,
+                    577,
+                    103,
+                    104,
+                    269,
+                    259,
+                    1453,
+                    260,
+                    261
+                ]
+            }
+        ]
     },
     "173411": {
         "name_enus": "Black Empire Leather Leggings",
@@ -473,7 +2760,128 @@
         "flags2": 155648,
         "displayName": "",
         "qualityTier": 0,
-        "contains": []
+        "contains": [
+            {
+                "id": 173484,
+                "name": "Breeches of the Insatiable Maw",
+                "slot": 7,
+                "appearances": {
+                    "0": [
+                        181066,
+                        ""
+                    ]
+                },
+                "specs": [
+                    102,
+                    1447,
+                    105,
+                    270,
+                    1450,
+                    581,
+                    268,
+                    1456,
+                    1480,
+                    577,
+                    103,
+                    104,
+                    269,
+                    259,
+                    1453,
+                    260,
+                    261
+                ]
+            },
+            {
+                "id": 173468,
+                "name": "Leggings of the Insatiable Maw",
+                "slot": 7,
+                "appearances": {
+                    "0": [
+                        181066,
+                        ""
+                    ]
+                },
+                "specs": [
+                    102,
+                    1447,
+                    105,
+                    270,
+                    1450,
+                    581,
+                    268,
+                    1456,
+                    1480,
+                    577,
+                    103,
+                    104,
+                    269,
+                    259,
+                    1453,
+                    260,
+                    261
+                ]
+            },
+            {
+                "id": 173814,
+                "name": "Trousers of the Insatiable Maw",
+                "slot": 7,
+                "appearances": {
+                    "0": [
+                        181066,
+                        ""
+                    ]
+                },
+                "specs": [
+                    102,
+                    1447,
+                    105,
+                    270,
+                    1450,
+                    581,
+                    268,
+                    1456,
+                    1480,
+                    577,
+                    103,
+                    104,
+                    269,
+                    259,
+                    1453,
+                    260,
+                    261
+                ]
+            },
+            {
+                "id": 173442,
+                "name": "Legwraps of the Insatiable Maw",
+                "slot": 7,
+                "appearances": {
+                    "0": [
+                        181066,
+                        ""
+                    ]
+                },
+                "specs": [
+                    102,
+                    1447,
+                    105,
+                    270,
+                    1450,
+                    581,
+                    268,
+                    1456,
+                    1480,
+                    577,
+                    103,
+                    104,
+                    269,
+                    259,
+                    1453,
+                    260,
+                    261
+                ]
+            }
+        ]
     },
     "173405": {
         "name_enus": "Black Empire Mail Spaulders",
@@ -490,7 +2898,58 @@
         "flags2": 155648,
         "displayName": "",
         "qualityTier": 0,
-        "contains": []
+        "contains": [
+            {
+                "id": 173451,
+                "name": "Nefarious Tormentor's Spaulders",
+                "slot": 3,
+                "appearances": {
+                    "0": [
+                        180873,
+                        ""
+                    ]
+                },
+                "specs": [
+                    253,
+                    262,
+                    1468,
+                    1444,
+                    264,
+                    1473,
+                    1465,
+                    1467,
+                    1448,
+                    254,
+                    255,
+                    263
+                ]
+            },
+            {
+                "id": 173838,
+                "name": "Nefarious Tormentor's Epaulets",
+                "slot": 3,
+                "appearances": {
+                    "0": [
+                        180873,
+                        ""
+                    ]
+                },
+                "specs": [
+                    253,
+                    262,
+                    1468,
+                    1444,
+                    264,
+                    1473,
+                    1465,
+                    1467,
+                    1448,
+                    254,
+                    255,
+                    263
+                ]
+            }
+        ]
     },
     "173402": {
         "name_enus": "Black Empire Mail Gloves",
@@ -507,7 +2966,108 @@
         "flags2": 155648,
         "displayName": "",
         "qualityTier": 0,
-        "contains": []
+        "contains": [
+            {
+                "id": 173465,
+                "name": "Nefarious Tormentor's Gloves",
+                "slot": 10,
+                "appearances": {
+                    "0": [
+                        180857,
+                        ""
+                    ]
+                },
+                "specs": [
+                    253,
+                    262,
+                    1468,
+                    1444,
+                    264,
+                    1473,
+                    1465,
+                    1467,
+                    1448,
+                    254,
+                    255,
+                    263
+                ]
+            },
+            {
+                "id": 173509,
+                "name": "Nefarious Tormentor's Handgrips",
+                "slot": 10,
+                "appearances": {
+                    "0": [
+                        180857,
+                        ""
+                    ]
+                },
+                "specs": [
+                    253,
+                    262,
+                    1468,
+                    1444,
+                    264,
+                    1473,
+                    1465,
+                    1467,
+                    1448,
+                    254,
+                    255,
+                    263
+                ]
+            },
+            {
+                "id": 173493,
+                "name": "Nefarious Tormentor's Handwraps",
+                "slot": 10,
+                "appearances": {
+                    "0": [
+                        180857,
+                        ""
+                    ]
+                },
+                "specs": [
+                    253,
+                    262,
+                    1468,
+                    1444,
+                    264,
+                    1473,
+                    1465,
+                    1467,
+                    1448,
+                    254,
+                    255,
+                    263
+                ]
+            },
+            {
+                "id": 173448,
+                "name": "Nefarious Tormentor's Handguards",
+                "slot": 10,
+                "appearances": {
+                    "0": [
+                        180857,
+                        ""
+                    ]
+                },
+                "specs": [
+                    253,
+                    262,
+                    1468,
+                    1444,
+                    264,
+                    1473,
+                    1465,
+                    1467,
+                    1448,
+                    254,
+                    255,
+                    263
+                ]
+            }
+        ]
     },
     "173420": {
         "name_enus": "Black Empire Cloth Belt",
@@ -524,7 +3084,108 @@
         "flags2": 155648,
         "displayName": "",
         "qualityTier": 0,
-        "contains": []
+        "contains": [
+            {
+                "id": 173813,
+                "name": "Vile Manipulator's Girdle",
+                "slot": 6,
+                "appearances": {
+                    "0": [
+                        181197,
+                        ""
+                    ]
+                },
+                "specs": [
+                    62,
+                    1449,
+                    1452,
+                    256,
+                    63,
+                    64,
+                    265,
+                    257,
+                    258,
+                    266,
+                    267,
+                    1454
+                ]
+            },
+            {
+                "id": 173436,
+                "name": "Vile Manipulator's Cinch",
+                "slot": 6,
+                "appearances": {
+                    "0": [
+                        181197,
+                        ""
+                    ]
+                },
+                "specs": [
+                    62,
+                    1449,
+                    1452,
+                    256,
+                    63,
+                    64,
+                    265,
+                    257,
+                    258,
+                    266,
+                    267,
+                    1454
+                ]
+            },
+            {
+                "id": 173511,
+                "name": "Vile Manipulator's Belt",
+                "slot": 6,
+                "appearances": {
+                    "0": [
+                        181197,
+                        ""
+                    ]
+                },
+                "specs": [
+                    62,
+                    1449,
+                    1452,
+                    256,
+                    63,
+                    64,
+                    265,
+                    257,
+                    258,
+                    266,
+                    267,
+                    1454
+                ]
+            },
+            {
+                "id": 173812,
+                "name": "Vile Manipulator's Cord",
+                "slot": 6,
+                "appearances": {
+                    "0": [
+                        181197,
+                        ""
+                    ]
+                },
+                "specs": [
+                    62,
+                    1449,
+                    1452,
+                    256,
+                    63,
+                    64,
+                    265,
+                    257,
+                    258,
+                    266,
+                    267,
+                    1454
+                ]
+            }
+        ]
     },
     "173425": {
         "name_enus": "Black Empire Mail Bracers",
@@ -541,6 +3202,107 @@
         "flags2": 155648,
         "displayName": "",
         "qualityTier": 0,
-        "contains": []
+        "contains": [
+            {
+                "id": 173473,
+                "name": "Nefarious Tormentor's Bracers",
+                "slot": 9,
+                "appearances": {
+                    "0": [
+                        180881,
+                        ""
+                    ]
+                },
+                "specs": [
+                    253,
+                    262,
+                    1468,
+                    1444,
+                    264,
+                    1473,
+                    1465,
+                    1467,
+                    1448,
+                    254,
+                    255,
+                    263
+                ]
+            },
+            {
+                "id": 173481,
+                "name": "Nefarious Tormentor's Bindings",
+                "slot": 9,
+                "appearances": {
+                    "0": [
+                        180881,
+                        ""
+                    ]
+                },
+                "specs": [
+                    253,
+                    262,
+                    1468,
+                    1444,
+                    264,
+                    1473,
+                    1465,
+                    1467,
+                    1448,
+                    254,
+                    255,
+                    263
+                ]
+            },
+            {
+                "id": 173453,
+                "name": "Nefarious Tormentor's Vambraces",
+                "slot": 9,
+                "appearances": {
+                    "0": [
+                        180881,
+                        ""
+                    ]
+                },
+                "specs": [
+                    253,
+                    262,
+                    1468,
+                    1444,
+                    264,
+                    1473,
+                    1465,
+                    1467,
+                    1448,
+                    254,
+                    255,
+                    263
+                ]
+            },
+            {
+                "id": 173488,
+                "name": "Nefarious Tormentor's Armwraps",
+                "slot": 9,
+                "appearances": {
+                    "0": [
+                        180881,
+                        ""
+                    ]
+                },
+                "specs": [
+                    253,
+                    262,
+                    1468,
+                    1444,
+                    264,
+                    1473,
+                    1465,
+                    1467,
+                    1448,
+                    254,
+                    255,
+                    263
+                ]
+            }
+        ]
     }
 }

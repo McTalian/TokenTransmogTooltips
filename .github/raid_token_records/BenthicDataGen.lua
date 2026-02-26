@@ -148,7 +148,7 @@ for _, armorType in ipairs(ARMOR_ORDER) do
           -- Sort modIDs for deterministic output
           table.sort(modIDs)
           local modIDStr = table.concat(modIDs, ", ")
-          table.insert(lines, string.format("  %s, %d, %s", slot, appearanceID, modIDStr))
+          table.insert(lines, string.format("  %s, %d, { %s }", slot, appearanceID, modIDStr))
         end
       end
     end
