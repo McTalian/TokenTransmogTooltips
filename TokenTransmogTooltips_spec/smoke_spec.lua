@@ -1,0 +1,16 @@
+--- Smoke test to verify the test framework is functional.
+describe("Test Framework", function()
+  it("should load the busted helper without errors", function()
+    assert.is_not_nil(_G.Enum)
+    assert.is_not_nil(_G.Enum.ItemCreationContext)
+    assert.is_not_nil(_G.Enum.ItemCreationContext.RaidFinder)
+    assert.is_not_nil(_G.Enum.ItemCreationContext.RaidNormal)
+    assert.is_not_nil(_G.Enum.ItemCreationContext.RaidHeroic)
+    assert.is_not_nil(_G.Enum.ItemCreationContext.RaidMythic)
+  end)
+
+  it("should have Lua 5.1 compat shims", function()
+    assert.is_not_nil(_G.unpack)
+    assert.is_not_nil(_G.format)
+  end)
+end)
