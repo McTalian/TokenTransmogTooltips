@@ -1,8 +1,8 @@
-<Ui xsi:schemaLocation="http://www.blizzard.com/wow/ui/ ..\FrameXML\UI.xsd">
+<Ui xsi:schemaLocation="http://www.blizzard.com/wow/ui/ ../FrameXML/UI.xsd">
   <Script file="_index.lua"/>
-  <Include file="dreadful\_index.xml"/>
-  <Include file="mystic\_index.xml"/>
-  <Include file="venerated\_index.xml"/>
-  <Include file="zenith\_index.xml"/>
+  <Include file="dreadful/_index.xml"/>
+  <Include file="mystic/_index.xml"/>
+  <Include file="venerated/_index.xml"/>
+  <Include file="zenith/_index.xml"/>
   <Script file="tokens.lua"/>
 </Ui>
