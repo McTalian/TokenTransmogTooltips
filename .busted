@@ -1,0 +1,9 @@
+-- Busted configuration file.
+-- https://lunarmodules.github.io/busted/#configuration-file
+return {
+  default = {
+    -- Helper runs once before the whole suite, setting up WoW API stubs
+    -- and Lua 5.1 compatibility shims that the addon code expects.
+    helper = "TokenTransmogTooltips_spec/_mocks/helper.lua",
+  },
+}
