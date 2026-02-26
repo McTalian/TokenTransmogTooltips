@@ -1,0 +1,3 @@
+local addonName, ns = ...
+
+ns._Gear.BlackEmpire = {}
