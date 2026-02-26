@@ -14,6 +14,7 @@
   <Include file="ThroneOfThunder/_index.xml"/> <!-- Tier 15 -->
   <Include file="SiegeOfOrgrimmar/_index.xml"/> <!-- Tier 16 -->
   <Include file="BlackrockFoundry/_index.xml"/> <!-- Tier 17 -->
+  <Include file="Benthic/_index.xml"/> <!-- BfA 8.2 Nazjatar -->
   <Include file="CastleNathria/_index.xml"/>
   <Include file="SepulcherOfTheFirstOnes/_index.xml"/>
   <Include file="VaultOfTheIncarnates/_index.xml"/>

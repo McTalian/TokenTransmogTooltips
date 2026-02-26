@@ -1,0 +1,8 @@
+<Ui xsi:schemaLocation="http://www.blizzard.com/wow/ui/ ..\FrameXML\UI.xsd">
+  <Script file="_index.lua"/>
+  <Include file="cloth/_index.xml"/>
+  <Include file="leather/_index.xml"/>
+  <Include file="mail/_index.xml"/>
+  <Include file="plate/_index.xml"/>
+  <Script file="tokens.lua"/>
+</Ui>
