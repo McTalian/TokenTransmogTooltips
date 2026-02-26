@@ -20,6 +20,9 @@ It _should_ work with tokens from the following sources:
 - **Shadowlands** _9.x.x_
   - Season 3 Raid: Sepulcher of the First Ones
   - Season 1 Raid: Castle Nathria (Anima weapon tokens)
+- **Battle for Azeroth** _8.x.x_
+  - Patch 8.3: Black Empire Armor Tokens (N'Zoth Assault tokens)
+  - Patch 8.2: Benthic Tokens (Nazjatar tokens)
 - **Warlords of Draenor** _6.x.x_
   - Tier 17 Raid: Blackrock Foundry (including the Quest items)
 - **Mists of Pandaria** _5.x.x_
@@ -51,7 +54,7 @@ It _should_ work with tokens from the following sources:
 
 There isn't a Blizzard API for this type of data, so I have manually added lookup tables for all the tokens I could find. If you find a token that is not supported (or is incorrect), please open an issue on the [GitHub repository](https://github.com/mctalian/TokenTransmogTooltips/issues), or let me know somehow. Include the token's itemID, the itemContext (should be on the tooltip for now), and which raid it comes from. You can also open the Appearance Journal in-game and find the items that should be associated with that token and provide the appearanceID and modID for those items (this addon adds that data to the tooltips in the Appearance Journal as well).
 
-The addon should be up to date with the latest raids. I will try to look into adding non-raid tokens as well. Please let me know if there are raid tokens missing, or if there are particular tokens you would like to see added 🙏
+The addon should be up to date with the latest raids and now also supports some open world token sources (Benthic, Black Empire). I will try to look into adding more non-raid tokens as well. Please let me know if there are raid tokens missing, or if there are particular tokens you would like to see added 🙏
 
 ## Notes
 
