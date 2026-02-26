@@ -1,0 +1,6 @@
+<Ui xsi:schemaLocation="http://www.blizzard.com/wow/ui/ ..\FrameXML\UI.xsd">
+  <Script file="priest.lua"/>
+  <Script file="mage.lua"/>
+  <Script file="warlock.lua"/>
+  <Script file="cloth.lua"/>
+</Ui>
