@@ -60,7 +60,7 @@ Always use forward slashes (`/`) for file paths regardless of OS. The WoW client
 This project uses several Copilot customization types:
 
 - **Instructions** (this file + supporting docs): Coding standards, data model rules
-- **Prompt files**: Reusable workflows for raid data generation (`/new-token`, `/plan-token`, `/generate-token`)
+- **Prompt files**: Reusable workflows for token source data generation (`/new-token`, `/plan-token`, `/generate-token`) — supports both raid and non-raid sources
 - **Reference docs** (`.github/docs/`): Environment setup, debugging tools, testing guides - reference as needed but not behavioral instructions
 
 ## Reference Documentation
@@ -70,4 +70,4 @@ This project uses several Copilot customization types:
 - **Environment**: [.github/docs/environment-setup.md](docs/environment-setup.md) - Dependencies, build tools, WoW API documentation
 - **Debugging**: [.github/docs/debugging-tools.md](docs/debugging-tools.md) - Alpha build tools for data collection
 - **Testing**: [.github/docs/testing-guide.md](docs/testing-guide.md) - Validation strategies and in-game verification
-- **Template**: [.github/docs/NEW_RAID_TEMPLATE.md](docs/NEW_RAID_TEMPLATE.md) - Raid token data collection format
+- **Template**: [.github/docs/NEW_RAID_TEMPLATE.md](docs/NEW_RAID_TEMPLATE.md) - Token source data collection format (raids and non-raid sources)

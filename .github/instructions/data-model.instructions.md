@@ -146,13 +146,14 @@ Some raids have different tokens for Alliance and Horde:
 Since Shadowlands, some raids include "curio" tokens that work for any slot:
 
 ```lua
--- Class file includes ALL slot
-ns._Gear.RaidName.CLASS["DIFFICULTY"]["ALL"] = mergeTable(
-  gear.CLASS["DIFFICULTY"]["HELM"],
-  gear.CLASS["DIFFICULTY"]["SHOULDERS"],
-  gear.CLASS["DIFFICULTY"]["CHEST"],
-  -- ... all slots ...
-)
+-- Class file includes ALL slot using mergeTable(target, source)
+-- mergeTable takes exactly 2 arguments: copies source keys into target, returns target.
+local LOCAL_DIFFICULTY_GEAR = {}
+mergeTable(LOCAL_DIFFICULTY_GEAR, gear.CLASS["DIFFICULTY"]["HELM"])
+mergeTable(LOCAL_DIFFICULTY_GEAR, gear.CLASS["DIFFICULTY"]["SHOULDERS"])
+mergeTable(LOCAL_DIFFICULTY_GEAR, gear.CLASS["DIFFICULTY"]["CHEST"])
+-- ... all slots ...
+ns._Gear.RaidName.CLASS["DIFFICULTY"]["ALL"] = LOCAL_DIFFICULTY_GEAR
 
 -- Token mapping references ALL
 [curioTokenID] = {
@@ -189,12 +190,14 @@ ns._Gear.RaidName.CLASS = {
   },
 }
 
--- If curio tokens exist, merge all slots
-ns._Gear.RaidName.CLASS["RAID_FINDER"]["ALL"] = mergeTable(
-  ns._Gear.RaidName.CLASS["RAID_FINDER"]["HELM"],
-  ns._Gear.RaidName.CLASS["RAID_FINDER"]["SHOULDERS"],
-  -- ... etc
-)
+-- If curio tokens exist, merge all slots per difficulty
+-- mergeTable(target, source) takes exactly 2 args.
+local LOCAL_RAID_FINDER_GEAR = {}
+mergeTable(LOCAL_RAID_FINDER_GEAR, ns._Gear.RaidName.CLASS["RAID_FINDER"]["HELM"])
+mergeTable(LOCAL_RAID_FINDER_GEAR, ns._Gear.RaidName.CLASS["RAID_FINDER"]["SHOULDERS"])
+-- ... etc for all slots
+ns._Gear.RaidName.CLASS["RAID_FINDER"]["ALL"] = LOCAL_RAID_FINDER_GEAR
+-- Repeat for NORMAL, HEROIC, MYTHIC
 ```
 
 ## Token Group Aggregator Structure
@@ -237,13 +240,90 @@ Some legacy tokens use `itemContext = 0` for unknown/universal difficulty.
 
 ## Slot Names
 
-Standard slot identifiers:
+Standard slot identifiers used as table keys:
 - `HELM`
 - `SHOULDERS`
+- `CLOAK`
 - `CHEST`
-- `HANDS`
-- `LEGS`
+- `BELT`
+- `BRACERS`
+- `GAUNTLETS`
+- `LEGGINGS`
+- `BOOTS`
 - `ALL` (curio/wildcard tokens only)
+
+Not all slots appear in every token source — raid tier tokens typically only cover `HELM`, `SHOULDERS`, `CHEST`, `GAUNTLETS`, and `LEGGINGS`, while open world token sources may cover all armor slots.
+
+When naming local variables in `tokens.lua`, shortened slot names are used:
+- `HELM` → `_HEAD`
+- `LEGGINGS` → `_LEGS`
+- `GAUNTLETS` → `_HANDS`
+- Other slots use their table key name as-is
+
+## Non-Raid Token Patterns
+
+Not all token sources come from raids. Open world drops, vendors, quests, and events may also have tokens that the addon supports. These follow slightly different structural patterns:
+
+### Armor-Type Specific (e.g., BlackEmpire, ForbiddenReach)
+
+Tokens are organized by armor type rather than class-based groups. Directory structure uses `cloth/`, `leather/`, `mail/`, `plate/` instead of named groups.
+
+```lua
+-- Class files use a source-specific difficulty key instead of standard difficulties
+ns._Gear.SourceName.CLASS = {
+  ["SOURCE_KEY"] = {  -- e.g., "NZOTH_ASSAULTS", "THE_FORBIDDEN_REACH"
+    ["HELM"] = {[appearanceID] = {modID,},},
+    -- ... other slots
+  },
+}
+
+-- Aggregator uses armor type string key
+ns._Gear.SourceName["PLATE"] = {
+  ["SOURCE_KEY"] = {
+    ["HELM"] = {
+      ["WARRIOR"] = gear.WARRIOR["SOURCE_KEY"]["HELM"],
+      -- ... other classes
+    },
+  },
+}
+
+-- tokens.lua maps directly, no Difficulties wrapper
+ns.Raids.SourceName = {
+  [tokenID] = plateGear["HELM"],  -- Direct mapping, itemContext = 0
+}
+```
+
+### Universal Token (e.g., Benthic)
+
+One token per slot usable by all classes. All armor types are merged into a single table per slot using `mergeTable`.
+
+```lua
+-- tokens.lua merges all armor types per slot
+local allClassGear = {}
+for _, slot in ipairs(SLOTS) do
+  allClassGear[slot] = {}
+  mergeTable(allClassGear[slot], clothGear[slot])
+  mergeTable(allClassGear[slot], leatherGear[slot])
+  mergeTable(allClassGear[slot], mailGear[slot])
+  mergeTable(allClassGear[slot], plateGear[slot])
+end
+
+ns.Raids.SourceName = {
+  [tokenID] = allClassGear["HELM"],  -- Contains all classes, itemContext = 0
+}
+```
+
+### How itemContext = 0 Works
+
+When a token has `itemContext = 0` (no difficulty information), [Core.lua](/TokenTransmogTooltips/Core.lua) skips the `Difficulties` unwrapping step:
+
+```lua
+if itemContext > 0 and tokenData.Difficulties then
+  tokenData = tokenData.Difficulties[itemContext]
+end
+```
+
+This means non-raid tokens map directly from `tokenID` → class appearance data without any difficulty indirection.
 
 ## Backwards Compatibility Considerations
 
@@ -252,5 +332,7 @@ Blizzard has changed token systems multiple times. The data model must accommoda
 - Faction-specific token variants
 - Curio/wildcard tokens (Shadowlands+)
 - Varying token group compositions across expansions
+- Non-raid token sources (open world, vendors, quests, events)
+- Armor-type-based token groups vs. class-based token groups
 
-When adding new raid data, verify the structure matches existing patterns for that era/expansion.
+When adding new token source data, verify the structure matches existing patterns for that era/expansion. Use the Source Type and Token Group Style fields in the record template to determine the correct code generation pattern.

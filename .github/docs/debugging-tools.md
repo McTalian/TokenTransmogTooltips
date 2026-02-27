@@ -97,22 +97,33 @@ TokenID: 12346, Context: MYTHIC, Slot: SHOULDERS, Classes: Death Knight, Demon H
 
 ### /tttgen Slash Command
 
-**What it does**: Generates raw appearance and modID data by analyzing Transmog Sets in the Collections UI.
+**What it does**: Generates raw appearance and modID data using two input modes: **Set Label** (transmog set search) and **Item List** (direct item ID lookup).
 
-**Purpose**: Primary tool for collecting class/difficulty/slot/appearance/modID mappings from in-game transmog sets.
+**Purpose**: Primary tool for collecting appearance/modID mappings. Set Label mode works for raid sets visible in the Collections UI; Item List mode works for non-raid tokens (open world, vendors, events) whose items aren't part of a named transmog set.
 
-**Implementation**: See [DataGenerator.lua around Line 283](../../TokenTransmogTooltips/DataGenerator.lua)
+**Implementation**: See [DataGenerator.lua](../../TokenTransmogTooltips/DataGenerator.lua)
 
-**Usage**:
-1. Open Collections (Shift+P)
-2. Navigate to Sets tab
-3. Select a set category (e.g., "Raid Finder", "Heroic")
-4. Select a class-specific armor set
-5. Type `/tttgen` in chat
-6. A modal window opens with options and a text area containing the generated output
-7. Copy the output from the text area and paste it into the raid template
+**Usage (Set Label mode)**:
+1. Type `/tttgen` in chat — the Token Data Generator window opens
+2. Ensure the **Set Label** button is selected (default)
+3. Enter the raid set label (e.g., "The Voidspire") in the text field
+4. Select which inventory slots to include via checkboxes
+5. Click **Generate**
+6. Copy the output and paste it into the token source record
 
-**Output structure**:
+**Usage (Item List mode)**:
+1. Type `/tttgen` in chat — the Token Data Generator window opens
+2. Click the **Item List** button to switch modes
+3. Paste a list of items into the text area, one per line, in either format:
+   - Simple CSV: `itemId, ARMOR_TYPE, SLOT`
+   - Lua table: `{ itemId, "ARMOR_TYPE", "SLOT" },`
+4. Lines starting with `--` or `#` are treated as comments and skipped
+5. Click **Generate**
+6. The tool calls `C_TransmogCollection.GetItemInfo()` for each item and produces output grouped by armor type
+
+**When to use Item List mode**: For non-raid tokens (Benthic, Black Empire, Forbidden Reach, etc.) whose appearances are **not** part of a named transmog set in the Collections UI. This replaces the need for one-off DataGen scripts.
+
+**Output structure (Set Label mode)**:
 
 The command generates two main sections:
 
@@ -175,12 +186,45 @@ The `/tttgen` output includes additional details that help with the `/plan-token
 - The generator pre-selects a candidate by matching set name words with source item names
 - You can change the `[X]` selection if the pre-selected source isn't correct
 
+#### Item List Mode Output Format
+
+When using Item List mode, the output is structured differently from Set Label mode:
+
+##### TEMPLATE Block
+```
+### ARMOR_TYPE
+  SLOT, appearanceID, { modID1, modID2 }
+  SLOT, appearanceID, { modID }
+```
+
+**Grouping**: Results are grouped by armor type (CLOTH, LEATHER, MAIL, PLATE) and slot, not by class
+
+**ModIDs**: Multiple modIDs for the same appearance are collected into a single `{ }` array, sorted numerically and deduplicated
+
+##### AUDIT Block
+```
+The following item IDs returned no appearance data:
+  12345
+  67890
+```
+
+**Purpose**: Lists any item IDs where `C_TransmogCollection.GetItemInfo()` returned nil (item may not exist, not be transmoggable, or data not loaded yet)
+
+If all items resolve successfully, shows: `All items resolved successfully.`
+
+**Workflow integration for non-raid sources**:
+1. Collect item IDs from Wowhead, in-game vendors, or quest rewards
+2. Build an item list with armor type and slot for each item
+3. Paste into `/tttgen` Item List mode and generate
+4. Copy the output into the token source record
+5. Run `/plan-token` and `/generate-token` as usual
+
 ## Data Collection Workflow Overview
 
 The typical flow for collecting token data:
 
-1. **Token IDs**: Use "Extract Tokens" button in Dungeon Journal
-2. **Appearance Data**: Use `/tttgen` command for each class/difficulty/set
+1. **Token IDs**: Use "Extract Tokens" button in Dungeon Journal (raid) or Wowhead/manual discovery (non-raid)
+2. **Appearance Data**: Use `/tttgen` — Set Label mode for raid sets, Item List mode for non-raid tokens
 3. **Verification**: Use TTT_Debug global to inspect final data structure
 4. **Testing**: Use Item Context display to verify difficulty detection in-game
 

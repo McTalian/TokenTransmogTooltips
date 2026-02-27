@@ -12,43 +12,37 @@ The addon's complexity lies primarily in its data structure rather than its runt
 
 Testing should focus on validating data integrity and verifying correct in-game behavior.
 
-## Automated Testing (Future Enhancement)
+## Automated Testing
 
-### Data Structure Validation
+Automated tests live in `TokenTransmogTooltips_spec/` and run via `make test` (uses [busted](https://lunarmodules.github.io/busted/) test framework).
 
-Potential automated tests that could validate data integrity:
+### Existing Test Suites
 
-**1. Schema Validation**
-- Verify all token entries follow the expected structure
-- Check that `Difficulties` tables use valid `Enum.ItemCreationContext` keys
-- Ensure all class names are valid (WARRIOR, MAGE, etc.)
-- Validate that appearanceID and modID are numeric
+**1. Smoke Tests** (`smoke_spec.lua`)
+- Verifies the test framework itself is functional
+- Checks that WoW API shims (`Enum.ItemCreationContext`, Lua 5.1 compat) load correctly
 
-**2. Completeness Checks**
-- Detect missing difficulties for tokens that should have them
-- Identify token groups with incomplete class coverage
-- Flag raids with inconsistent difficulty sets across token groups
+**2. Data Integrity Tests** (`data_integrity_spec.lua`)
+- Loads ALL raid data via the XML-driven loader
+- Validates every token, appearance, and modID conforms to the expected structure
+- Checks class names are valid WoW class identifiers
+- Verifies numeric types for appearanceID and modID
+- Catches data corruption before it reaches players
 
-**3. Duplicate Detection**
-- Check for duplicate token IDs across raids (addon warns at runtime, but pre-build check would be better)
-- Identify duplicate appearanceID/modID combinations that might indicate copy-paste errors
+**3. XML Load Order Tests** (`xml_load_order_spec.lua`)
+- Validates `_raids.xml`: `_index.lua` is first, every raid directory has an entry
+- Validates raid `_index.xml`: `_index.lua` (if present) is first, `tokens.lua` is last
+- Validates token group `_index.xml`: aggregator (directory-named `.lua`) is last
+- Prevents nil reference errors from incorrect load ordering
 
-**4. XML Load Order Validation**
-- Parse `_index.xml` files to verify load order matches requirements:
-  - Raid `_index.lua` loads first
-  - Token group `_index.xml` files load before `tokens.lua`
-  - Class files load before aggregator files within token groups
+**4. Core Logic Tests** (`Core_spec.lua`)
+- Tests the tooltip hook system and token resolution logic
 
-**5. Reference Integrity**
-- Verify that all token group references in `tokens.lua` have corresponding data in `_Gear` namespace
-- Check that faction-specific branches (ALLIANCE/HORDE) exist when needed
+### Potential Future Tests
 
-**Implementation Approach**:
-- Could be implemented as a Lua script that runs during build process
-- Use `wow-build-tools` to execute validation before packaging
-- Fail CI builds if validation errors are detected
-
-**Future Consideration**: These tests would catch data errors before they reach players and reduce manual testing burden.
+- **Completeness checks**: Detect missing difficulties, incomplete class coverage across token groups
+- **Duplicate detection**: Pre-build check for duplicate token IDs across raids (addon warns at runtime, but pre-build would be earlier)
+- **Reference integrity**: Verify all token group references in `tokens.lua` have corresponding `_Gear` data
 
 ## Manual Testing
 
