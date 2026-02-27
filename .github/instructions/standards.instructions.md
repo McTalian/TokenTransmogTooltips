@@ -133,8 +133,7 @@ XML `_index.xml` files define load order. Structure matters:
 
 **Token group `_index.xml`**:
 ```xml
-<Ui xmlns="http://www.blizzard.com/wow/ui/">
-  <!-- Classes first (order doesn't matter) -->
+<Ui xsi:schemaLocation="http://www.blizzard.com/wow/ui/ ..\FrameXML\UI.xsd">
   <Script file="class1.lua"/>
   <Script file="class2.lua"/>
   <!-- Aggregator last -->
@@ -144,13 +143,10 @@ XML `_index.xml` files define load order. Structure matters:
 
 **Raid `_index.xml`**:
 ```xml
-<Ui xmlns="http://www.blizzard.com/wow/ui/">
-  <!-- Namespace creation first -->
+<Ui xsi:schemaLocation="http://www.blizzard.com/wow/ui/ ..\FrameXML\UI.xsd">
   <Script file="_index.lua"/>
-  <!-- Token groups (order doesn't matter) -->
   <Include file="tokengroup1/_index.xml"/>
   <Include file="tokengroup2/_index.xml"/>
-  <!-- Token mapping last -->
   <Script file="tokens.lua"/>
 </Ui>
 ```
@@ -159,7 +155,7 @@ XML `_index.xml` files define load order. Structure matters:
 
 - Use consistent indentation (2 spaces)
 - Keep opening/closing tags aligned
-- Include xmlns attribute on root `<Ui>` element
+- Include `xsi:schemaLocation` attribute on root `<Ui>` element
 
 ## Build Markers
 

@@ -1,39 +1,76 @@
-# New Raid Data Template
+# New Token Source Data Template
 
 > **Incremental Workflow**: Fill sections progressively, then use `/tttgen` output to populate Appearance/ModID data. Focus your time on gathering IDs from in-game sources.
 
-## 👤 USER: Raid Information
+## 👤 USER: Source Information
 
-**Raid Name**: 
-**Raid Abbreviation**: (3-letter code, e.g., NAP, MOE, TWW)
+**Source Name**: (e.g., "ManaforgeOmega", "Benthic", "BlackEmpire" — no spaces or special characters)
+**Source Abbreviation**: (3-letter code, e.g., NAP, MOE, Ben)
 **Release Patch**: (e.g., 12.1.0)
+**Source Type**: (Raid | Open World | Vendor | Quest | Event)
 **Has Curio/Wildcard Token**: (Yes/No)
 **Faction-Specific Tokens**: (Yes/No — if yes, which factions? If different from "ALLIANCE"/"HORDE", the code in [Core.lua](/TokenTransmogTooltips/Core.lua) will need adjustment as well.)
+**Has Difficulty Tiers**: (Yes/No — if yes, which? e.g., LFR/Normal/Heroic/Mythic. If no, tokens have itemContext = 0.)
+**Token Group Style**: (Class-based | Armor-type | Universal — see notes below)
 **Other Special Considerations**: (e.g. anything that may impact data structure generation or edge cases that haven't been covered before.)
+
+> **Token Group Style notes**:
+> - **Class-based**: Token groups are named sets shared by specific classes (e.g., VOIDWOVEN for Mage/Priest/Warlock). Most raids use this.
+> - **Armor-type**: Separate tokens per armor type (CLOTH/LEATHER/MAIL/PLATE), each containing all classes for that armor type. Used by ForbiddenReach, BlackEmpire.
+> - **Universal**: One token per slot usable by all classes, producing armor-type-appropriate gear. Used by Benthic.
 
 ---
 
-## 👤 USER: DungeonJournal Extract Tokens Output
+## 👤 USER: Token Discovery
+
+### For Raids (Source Type: Raid)
 
 Open the DungeonJournal in-game with an alpha build of TokenTransmogTooltips. Navigate to the raid, select "All Classes" filter and select a Difficulty in the dropdown. Click the "Extract Tokens" button to copy the token data to your clipboard. Paste the output below. Repeat the process for each difficulty.
 
+### For Non-Raid Sources (Source Type: Open World / Vendor / Quest / Event)
 
-**Extract Tokens Output**:
+The Dungeon Journal extractor does not work for non-raid content. Gather token IDs manually using one of these methods:
+- **Wowhead**: Search for the tokens and record itemIDs and slot information
+- **In-game**: Use an itemID addon or `/run` scripts to inspect items
+- **Scraping**: Use the `scrape_tokens.py` script in `/.github/raid_token_records/` for Wowhead data extraction (discover, contains, or full pipeline)
+
+Use the same format as the DungeonJournal extractor output:
+```
+-- Format: [ITEMID] - Token Name - SLOT - Source/Difficulty
+```
+
+**Token Data Output**:
 ```
 
 ```
 
 ---
 
-## 👤 USER: /tttgen Transmog Set Appearance Data Output
+## 👤 USER: Appearance Data
 
-With an alpha build of TokenTransmogTooltips, run `/tttgen` in the chat window. A modal will appear where you provide a "label" (usually corresponds to the raid name, cross-reference with one of the class sets in the Transmog Sets UI). After entering the label, select which gear slots have tokens and click "Generate Data". Copy the output and paste the output below:
+### For Transmog Set sources (tokens map to items in Blizzard's Transmog Sets UI)
 
+With an alpha build of TokenTransmogTooltips, run `/tttgen` in the chat window. A modal will appear where you provide a "label" (usually corresponds to the raid name, cross-reference with one of the class sets in the Transmog Sets UI). After entering the label, select which gear slots have tokens and click "Generate Data". Copy the output and paste the output below.
+
+### For Non-Transmog Set sources (items NOT in Blizzard's Transmog Sets UI)
+
+The `/tttgen` command only works for items registered in Blizzard's Transmog Set system. For other sources, gather appearance data using one of these alternative methods:
+
+1. **`/tttgen` Item List mode**: Use the Item List input mode of `/tttgen` — paste a list of `{itemId, armorType, slot}` entries and it will call `C_TransmogCollection.GetItemInfo()` per item to collect `appearanceID`/`modID` data. See [debugging-tools.md](debugging-tools.md) for details.
+2. **Wowhead scraping**: Use `scrape_tokens.py contains` to extract "contains" data from Wowhead item pages, then cross-reference with in-game appearance data.
+
+Use the same output format as `/tttgen`:
+```
+### ARMOR_TYPE_OR_CLASS
+  SLOT, appearanceID, { modID1, modID2, ... }
+```
+
+**Appearance Data Output**:
 ```
 
 ```
 
-**NOTE**: If any AppearanceId has multiple ModIds, an AUDIT block will be included in the output above. Review each AUDIT block and mark the correct ModId(s) by changing `[ ]` to `[X]`. If no ModId is marked for an AppearanceId, the `/plan-token` command will halt and prompt you to resolve the audit entries before proceeding.
+**NOTE**: If any AppearanceId has multiple ModIds, an AUDIT block will be included in the `/tttgen` output (or should be manually created for non-tttgen sources). Review each AUDIT block and mark the correct ModId(s) by changing `[ ]` to `[X]`. If no ModId is marked for an AppearanceId, the `/plan-token` command will halt and prompt you to resolve the audit entries before proceeding.
 
 ---
 
@@ -43,7 +80,7 @@ With an alpha build of TokenTransmogTooltips, run `/tttgen` in the chat window. 
 
 ### Token Groups and Class Mappings
 
-Discerned from Extract Tokens raw output:
+Discerned from token data output:
 
 | Token Group Name | Classes Covered                                |
 |------------------|------------------------------------------------|

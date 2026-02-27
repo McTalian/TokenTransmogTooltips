@@ -3,3 +3,5 @@
 luacov-html/
 luacov.stats.out
 luacov.report.out
+
+__pycache__/

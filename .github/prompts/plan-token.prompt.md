@@ -1,25 +1,25 @@
 ---
 name: 'plan-token'
-description: 'Generate an implementation plan from a completed raid token record'
+description: 'Generate an implementation plan from a completed token source record'
 agent: agent
 argument-hint: 'ID (3-digit record number, e.g. 001)'
 ---
-# Plan Raid Data Generation
+# Plan Token Data Generation
 
-Generate a detailed implementation plan for adding new raid token data based on a completed data collection document.
+Generate a detailed implementation plan for adding new token data based on a completed data collection document. Supports both raid and non-raid token sources.
 
 ## Parameters
 
-- `ID`: The 3-digit identifier corresponding to the raid token record markdown file (e.g., "001")
+- `ID`: The 3-digit identifier corresponding to the token record markdown file (e.g., "001")
 
 ## Prerequisites
 
-The raid record file must contain:
-- Raid metadata (name, abbreviation, patch)
+The token record file must contain:
+- Source metadata (name, abbreviation, patch, source type, token group style)
 - Curio/wildcard token information
 - Faction-specific token notes
-- DungeonJournal Extract Tokens output
-- `/tttgen` transmog set appearance data
+- Token data (from DungeonJournal Extract Tokens or manual entry)
+- Appearance data (from `/tttgen` Set Label or Item List mode)
 - Class/Difficulty/Slot → AppearanceID/ModID mappings
 - Completed AUDIT section (all multi-modID choices marked with `[X]`)
 
@@ -34,13 +34,34 @@ The raid record file must contain:
 ### 2. Verify Required Sections
 
 Check that the file contains all required sections:
-- **Metadata**: Raid name, abbreviation, patch (optional)
-- **Token Configuration**: Curio tokens, faction-specific handling
-- **Raw Data**: Extract Tokens output, `/tttgen` output
-- **Mappings**: Complete Class/Difficulty/Slot combinations
+- **Metadata**: Source name, abbreviation, patch (optional), source type, token group style
+- **Token Configuration**: Curio tokens, faction-specific handling, difficulty tiers
+- **Raw Data**: Token data output, appearance data output
+- **Mappings**: Complete Class/Difficulty/Slot combinations (or ArmorType/Slot for non-raid sources)
 - **Audit Resolution**: All multi-modID entries must have exactly one `[X]` selection
 
-### 3. Audit Validation
+### 3. Determine Source Pattern
+
+Based on the Source Type and Token Group Style metadata, determine the code generation pattern:
+
+1. **Standard Raid** (Source Type: Raid, Token Group Style: Class-based):
+   - Class-based token groups (e.g., VOIDWOVEN, MYSTIC)
+   - Multiple difficulties with `Enum.ItemCreationContext` wrappers
+   - `tokens.lua` uses `Difficulties = { ... }` structure
+
+2. **Armor-Type Specific** (Token Group Style: Armor-type):
+   - Token groups organized by armor type (CLOTH/LEATHER/MAIL/PLATE)
+   - Typically no difficulties (itemContext = 0)
+   - `tokens.lua` maps token IDs directly to armor type gear tables
+   - Examples: ForbiddenReach, BlackEmpire
+
+3. **Universal Token** (Token Group Style: Universal):
+   - One token per slot, all classes share it
+   - No difficulties (itemContext = 0)
+   - `tokens.lua` merges all armor types into a single table per slot
+   - Example: Benthic
+
+### 4. Audit Validation
 
 For each AUDIT section (denoted by `## Audit`):
 1. Parse each Class/Difficulty/Slot combination (denoted by `### CLASSNAME -`)
@@ -51,25 +72,38 @@ For each AUDIT section (denoted by `## Audit`):
    - Prompt user to review and mark exactly one choice per entry
    - Instruct user to re-run `@#file:plan-token` after fixing
 
-### 4. Parse Token Groups
+### 5. Parse Token Groups
 
-From the Extract Tokens output:
+From the Token Data output:
+
+**For Class-based (Raid) sources**:
 1. Identify token group naming patterns (token names + class sets)
 2. Group tokens by class composition
 3. Derive token group names (e.g., VOIDWOVEN, MYSTIC, CONQUEROR)
-4. Create a Token Groups & Class Mappings table
 
-### 5. Generate Token ID Mappings
+**For Armor-type sources**:
+1. Use CLOTH, LEATHER, MAIL, PLATE as token group names
+2. Map classes to their armor type
 
-For each unique token ID from Extract Tokens:
-1. Map to applicable difficulties (from itemContext)
-2. Map to token group (from class composition)
+**For Universal sources**:
+1. Use CLOTH, LEATHER, MAIL, PLATE as organizational groups
+2. Note that all groups will be merged per-slot in `tokens.lua`
+
+Create a Token Groups & Class Mappings table.
+
+### 6. Generate Token ID Mappings
+
+For each unique token ID from the Token Data output:
+1. Map to applicable difficulties (from itemContext, or a single source-specific key like "NAZJATAR" for non-raid)
+2. Map to token group (from class composition or armor type)
 3. Map to slot (HELM, SHOULDERS, etc.)
 4. Create: `TokenID → Difficulties → TokenGroup → Slot` structure
 
-### 6. Transform Class Data
+### 7. Transform Class Data
 
 For each class in the mappings section:
+
+**For Class-based (Raid) sources**:
 1. Read headers: `### CLASS - Set Name - Difficulty`
 2. Transform to: `### TOKENGROUP - CLASS - DIFFICULTY`
 3. For each slot under the class:
@@ -77,9 +111,21 @@ For each class in the mappings section:
    - Apply AUDIT selections (use marked `[X]` modID)
    - Generate: `SLOT, appearanceID, modID` lines
 
-### 7. Generate PLAN OUTPUT
+**For Armor-type and Universal sources**:
+1. Read headers: `### ARMOR_TYPE` (e.g., `### CLOTH`)
+2. Map to all classes in that armor type
+3. Transform to: `### ARMOR_TYPE - CLASS - DIFFICULTY_KEY`
+4. For each slot under the armor type:
+   - Extract: `SLOT, appearanceID, { modID1, modID2, ... }`
+   - Apply AUDIT selections if applicable
+   - Generate: `SLOT, appearanceID, { modID1, modID2, ... }` lines
+   - Replicate for each class in the armor type (all share same appearance data)
 
-Create or update the `## PLAN OUTPUT` section in the raid record with:
+### 8. Generate PLAN OUTPUT
+
+Create or update the `## PLAN OUTPUT` section in the record with:
+
+**Source Pattern**: (Standard Raid | Armor-Type Specific | Universal Token)
 
 **Token Groups & Class Mappings**:
 ```
@@ -91,7 +137,7 @@ Create or update the `## PLAN OUTPUT` section in the raid record with:
 **Token ID Mappings**:
 ```
 TokenID: 12345
-  - Difficulties: LFR, Normal, Heroic, Mythic
+  - Difficulties: LFR, Normal, Heroic, Mythic  (or single key like NAZJATAR for non-raid)
   - Token Group: TOKENGROUP1
   - Slot: HELM
 
@@ -115,14 +161,15 @@ SHOULDERS, appearanceID, modID
 ...
 ```
 
-### 8. Verification
+### 9. Verification
 
 1. Confirm PLAN OUTPUT was added/updated successfully
-2. Verify each class has the same set of difficulties and slots
+2. Verify each class has the same set of difficulties and slots (or single difficulty key for non-raid)
 3. Highlight any discrepancies for user review
 4. Check that every token ID has corresponding data
+5. Verify the identified Source Pattern matches the metadata
 
-### 9. Provide Next Steps
+### 10. Provide Next Steps
 
 If validation passes:
 - Instruct user to review PLAN OUTPUT section
@@ -141,5 +188,5 @@ If validation fails:
 
 ## Output
 
-- Updates: `/.github/raid_token_records/{ID}_{raidName}.md` with PLAN OUTPUT section
+- Updates: `/.github/raid_token_records/{ID}_{sourceName}.md` with PLAN OUTPUT section
 - User receives: Validation results and next steps
